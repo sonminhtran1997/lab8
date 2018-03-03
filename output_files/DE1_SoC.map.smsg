@@ -1,0 +1,8 @@
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Warning (10030): Net "green_array[1][7..2]" at DE1_SoC.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 3
+Warning (10030): Net "green_array[7..2]" at DE1_SoC.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 3
+Warning (10030): Net "green_array[0][7..2]" at DE1_SoC.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 3
+Warning (10034): Output port "GPIO_0[27..0]" at DE1_SoC.sv(2) has no driver File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 2
+Warning (10034): Output port "L" at inputUser.sv(4) has no driver File: C:/Users/Son Tran/Desktop/lab8/inputUser.sv Line: 4
+Warning (10034): Output port "U" at inputUser.sv(4) has no driver File: C:/Users/Son Tran/Desktop/lab8/inputUser.sv Line: 4
+Warning (10034): Output port "D" at inputUser.sv(4) has no driver File: C:/Users/Son Tran/Desktop/lab8/inputUser.sv Line: 4
