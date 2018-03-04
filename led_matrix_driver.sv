@@ -1,7 +1,7 @@
-module driver(clock, green_array, green_driver, row_sink);
+module led_matrix_driver (clock, red_array, green_array, red_driver, green_driver, row_sink);
 	input clock;
-	input [7:0][7:0] green_array;
-	output reg [7:0] green_driver, row_sink;
+	input [7:0][7:0] red_array, green_array;
+	output reg [7:0] red_driver, green_driver, row_sink;
 	reg [2:0] count;
 	always @(posedge clock)
 		count <= count + 3'b001;
@@ -16,6 +16,6 @@ module driver(clock, green_array, green_driver, row_sink);
 			3'b110: row_sink = 8'b10111111;
 			3'b111: row_sink = 8'b01111111;
 		endcase
-	// assign red_driver = red_array[count];
+	assign red_driver = red_array[count];
 	assign green_driver = green_array[count];
 endmodule

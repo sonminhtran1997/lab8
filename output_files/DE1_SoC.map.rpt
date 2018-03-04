@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Sat Mar 03 14:34:12 2018
+Sun Mar 04 00:27:32 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,8 +10,93 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: inputUser:inputpress|handleClick:Left
+ 12. Parameter Settings for User Entity Instance: inputUser:inputpress|handleClick:Right
+ 13. Parameter Settings for User Entity Instance: inputUser:inputpress|handleClick:Up
+ 14. Parameter Settings for User Entity Instance: inputUser:inputpress|handleClick:Down
+ 15. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED64
+ 16. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED63
+ 17. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED62
+ 18. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED61
+ 19. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED60
+ 20. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED59
+ 21. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED58
+ 22. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED57
+ 23. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED56
+ 24. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED55
+ 25. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED54
+ 26. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED53
+ 27. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED52
+ 28. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED51
+ 29. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED50
+ 30. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED49
+ 31. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED48
+ 32. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED47
+ 33. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED46
+ 34. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED45
+ 35. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED44
+ 36. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED43
+ 37. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED42
+ 38. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED41
+ 39. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED40
+ 40. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED39
+ 41. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED38
+ 42. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED37
+ 43. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED36
+ 44. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED35
+ 45. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED34
+ 46. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED33
+ 47. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED32
+ 48. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED31
+ 49. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED30
+ 50. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED29
+ 51. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED28
+ 52. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED27
+ 53. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED26
+ 54. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED25
+ 55. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED24
+ 56. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED23
+ 57. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED22
+ 58. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED21
+ 59. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED20
+ 60. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED19
+ 61. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED18
+ 62. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED17
+ 63. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED16
+ 64. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED15
+ 65. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED14
+ 66. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED13
+ 67. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED12
+ 68. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED11
+ 69. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED10
+ 70. Parameter Settings for User Entity Instance: frog:setFrog|lights:LED9
+ 71. Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED8
+ 72. Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED7
+ 73. Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED6
+ 74. Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED5
+ 75. Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED4
+ 76. Parameter Settings for User Entity Instance: frog:setFrog|center:LED3
+ 77. Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED2
+ 78. Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED1
+ 79. Port Connectivity Checks: "frog:setFrog|lights:LED57"
+ 80. Port Connectivity Checks: "frog:setFrog|lights:LED58"
+ 81. Port Connectivity Checks: "frog:setFrog|lights:LED59"
+ 82. Port Connectivity Checks: "frog:setFrog|lights:LED60"
+ 83. Port Connectivity Checks: "frog:setFrog|lights:LED61"
+ 84. Port Connectivity Checks: "frog:setFrog|lights:LED62"
+ 85. Port Connectivity Checks: "frog:setFrog|lights:LED63"
+ 86. Port Connectivity Checks: "frog:setFrog|lights:LED64"
+ 87. Port Connectivity Checks: "clock_divider:clkdiv"
+ 88. Post-Synthesis Netlist Statistics for Top Partition
+ 89. Elapsed Time Per Partition
+ 90. Analysis & Synthesis Messages
+ 91. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -35,22 +120,27 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sat Mar 03 14:34:12 2018           ;
-; Quartus Prime Version       ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
-; Revision Name               ; DE1_SoC                                     ;
-; Top-level Entity Name       ; DE1_SoC                                     ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Mar 04 00:27:32 2018       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE1_SoC                                     ;
+; Top-level Entity Name           ; DE1_SoC                                     ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 135                                         ;
+; Total pins                      ; 51                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -145,15 +235,1067 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                     ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/lab8/DE1_SoC.sv           ;         ;
+; inputUser.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/lab8/inputUser.sv         ;         ;
+; lights.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/lab8/lights.sv            ;         ;
+; frog.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/lab8/frog.sv              ;         ;
+; center.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/lab8/center.sv            ;         ;
+; bottomLight.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/lab8/bottomLight.sv       ;         ;
+; led_matrix_driver.sv             ; yes             ; User SystemVerilog HDL File  ; C:/lab8/led_matrix_driver.sv ;         ;
+; cars.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/lab8/cars.sv              ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                          ;
++---------------------------------------------+----------------------------------------+
+; Resource                                    ; Usage                                  ;
++---------------------------------------------+----------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 177                                    ;
+;                                             ;                                        ;
+; Combinational ALUT usage for logic          ; 260                                    ;
+;     -- 7 input functions                    ; 22                                     ;
+;     -- 6 input functions                    ; 68                                     ;
+;     -- 5 input functions                    ; 30                                     ;
+;     -- 4 input functions                    ; 68                                     ;
+;     -- <=3 input functions                  ; 72                                     ;
+;                                             ;                                        ;
+; Dedicated logic registers                   ; 135                                    ;
+;                                             ;                                        ;
+; I/O pins                                    ; 51                                     ;
+;                                             ;                                        ;
+; Total DSP Blocks                            ; 0                                      ;
+;                                             ;                                        ;
+; Maximum fan-out node                        ; clock_divider:clkdiv|divided_clock[15] ;
+; Maximum fan-out                             ; 120                                    ;
+; Total fan-out                               ; 1587                                   ;
+; Average fan-out                             ; 3.19                                   ;
++---------------------------------------------+----------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name       ; Library Name ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------+-------------------+--------------+
+; |DE1_SoC                      ; 260 (5)             ; 135 (0)                   ; 0                 ; 0          ; 51   ; 0            ; |DE1_SoC                                        ; DE1_SoC           ; work         ;
+;    |cars:getCar|              ; 20 (20)             ; 44 (44)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|cars:getCar                            ; cars              ; work         ;
+;    |clock_divider:clkdiv|     ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider:clkdiv                   ; clock_divider     ; work         ;
+;    |frog:setFrog|             ; 158 (0)             ; 64 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog                           ; frog              ; work         ;
+;       |bottomLight:LED1|      ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED1          ; bottomLight       ; work         ;
+;       |bottomLight:LED2|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED2          ; bottomLight       ; work         ;
+;       |bottomLight:LED4|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED4          ; bottomLight       ; work         ;
+;       |bottomLight:LED5|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED5          ; bottomLight       ; work         ;
+;       |bottomLight:LED6|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED6          ; bottomLight       ; work         ;
+;       |bottomLight:LED7|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED7          ; bottomLight       ; work         ;
+;       |bottomLight:LED8|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED8          ; bottomLight       ; work         ;
+;       |center:LED3|           ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|center:LED3               ; center            ; work         ;
+;       |lights:LED10|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED10              ; lights            ; work         ;
+;       |lights:LED11|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED11              ; lights            ; work         ;
+;       |lights:LED12|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED12              ; lights            ; work         ;
+;       |lights:LED13|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED13              ; lights            ; work         ;
+;       |lights:LED14|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED14              ; lights            ; work         ;
+;       |lights:LED15|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED15              ; lights            ; work         ;
+;       |lights:LED16|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED16              ; lights            ; work         ;
+;       |lights:LED17|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED17              ; lights            ; work         ;
+;       |lights:LED18|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED18              ; lights            ; work         ;
+;       |lights:LED19|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED19              ; lights            ; work         ;
+;       |lights:LED20|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED20              ; lights            ; work         ;
+;       |lights:LED21|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED21              ; lights            ; work         ;
+;       |lights:LED22|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED22              ; lights            ; work         ;
+;       |lights:LED23|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED23              ; lights            ; work         ;
+;       |lights:LED24|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED24              ; lights            ; work         ;
+;       |lights:LED25|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED25              ; lights            ; work         ;
+;       |lights:LED26|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED26              ; lights            ; work         ;
+;       |lights:LED27|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED27              ; lights            ; work         ;
+;       |lights:LED28|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED28              ; lights            ; work         ;
+;       |lights:LED29|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED29              ; lights            ; work         ;
+;       |lights:LED30|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED30              ; lights            ; work         ;
+;       |lights:LED31|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED31              ; lights            ; work         ;
+;       |lights:LED32|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED32              ; lights            ; work         ;
+;       |lights:LED33|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED33              ; lights            ; work         ;
+;       |lights:LED34|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED34              ; lights            ; work         ;
+;       |lights:LED35|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED35              ; lights            ; work         ;
+;       |lights:LED36|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED36              ; lights            ; work         ;
+;       |lights:LED37|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED37              ; lights            ; work         ;
+;       |lights:LED38|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED38              ; lights            ; work         ;
+;       |lights:LED39|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED39              ; lights            ; work         ;
+;       |lights:LED40|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED40              ; lights            ; work         ;
+;       |lights:LED41|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED41              ; lights            ; work         ;
+;       |lights:LED42|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED42              ; lights            ; work         ;
+;       |lights:LED43|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED43              ; lights            ; work         ;
+;       |lights:LED44|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED44              ; lights            ; work         ;
+;       |lights:LED45|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED45              ; lights            ; work         ;
+;       |lights:LED46|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED46              ; lights            ; work         ;
+;       |lights:LED47|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED47              ; lights            ; work         ;
+;       |lights:LED48|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED48              ; lights            ; work         ;
+;       |lights:LED49|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED49              ; lights            ; work         ;
+;       |lights:LED50|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED50              ; lights            ; work         ;
+;       |lights:LED51|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED51              ; lights            ; work         ;
+;       |lights:LED52|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED52              ; lights            ; work         ;
+;       |lights:LED53|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED53              ; lights            ; work         ;
+;       |lights:LED54|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED54              ; lights            ; work         ;
+;       |lights:LED55|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED55              ; lights            ; work         ;
+;       |lights:LED56|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED56              ; lights            ; work         ;
+;       |lights:LED57|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED57              ; lights            ; work         ;
+;       |lights:LED58|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED58              ; lights            ; work         ;
+;       |lights:LED59|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED59              ; lights            ; work         ;
+;       |lights:LED60|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED60              ; lights            ; work         ;
+;       |lights:LED61|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED61              ; lights            ; work         ;
+;       |lights:LED62|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED62              ; lights            ; work         ;
+;       |lights:LED63|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED63              ; lights            ; work         ;
+;       |lights:LED64|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED64              ; lights            ; work         ;
+;       |lights:LED9|           ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED9               ; lights            ; work         ;
+;    |inputUser:inputpress|     ; 4 (0)               ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress                   ; inputUser         ; work         ;
+;       |handleClick:Down|      ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Down  ; handleClick       ; work         ;
+;       |handleClick:Left|      ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Left  ; handleClick       ; work         ;
+;       |handleClick:Right|     ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Right ; handleClick       ; work         ;
+;       |handleClick:Up|        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Up    ; handleClick       ; work         ;
+;    |led_matrix_driver:driver| ; 57 (57)             ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|led_matrix_driver:driver               ; led_matrix_driver ; work         ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++--------------------------------------------+-----------------------------------------+
+; Register name                              ; Reason for Removal                      ;
++--------------------------------------------+-----------------------------------------+
+; cars:getCar|red_array[0][1]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[0][2]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[0][3]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[0][4]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[0][5]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[0][6]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[0][7]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[7][0]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[7][1]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[7][2]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[7][3]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[7][4]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[7][5]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[7][6]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[7][7]                ; Merged with cars:getCar|red_array[0][0] ;
+; cars:getCar|red_array[2][4]                ; Merged with cars:getCar|red_array[2][0] ;
+; cars:getCar|red_array[2][5]                ; Merged with cars:getCar|red_array[2][1] ;
+; cars:getCar|red_array[2][6]                ; Merged with cars:getCar|red_array[2][2] ;
+; cars:getCar|red_array[2][7]                ; Merged with cars:getCar|red_array[2][3] ;
+; cars:getCar|red_array[0][0]                ; Stuck at GND due to stuck port data_in  ;
+; clock_divider:clkdiv|divided_clock[16..31] ; Lost fanout                             ;
+; Total Number of Removed Registers = 36     ;                                         ;
++--------------------------------------------+-----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 135   ;
+; Number of registers using Synchronous Clear  ; 95    ;
+; Number of registers using Synchronous Load   ; 5     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |DE1_SoC|led_matrix_driver:driver|Mux9 ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |DE1_SoC|led_matrix_driver:driver|Mux2 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: inputUser:inputpress|handleClick:Left ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; on             ; 1     ; Unsigned Binary                                           ;
+; off            ; 0     ; Unsigned Binary                                           ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: inputUser:inputpress|handleClick:Right ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; on             ; 1     ; Unsigned Binary                                            ;
+; off            ; 0     ; Unsigned Binary                                            ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: inputUser:inputpress|handleClick:Up ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; on             ; 1     ; Unsigned Binary                                         ;
+; off            ; 0     ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: inputUser:inputpress|handleClick:Down ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; on             ; 1     ; Unsigned Binary                                           ;
+; off            ; 0     ; Unsigned Binary                                           ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED64 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED63 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED62 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED61 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED60 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED59 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED58 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED57 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED56 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED55 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED54 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED53 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED52 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED51 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED50 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED49 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED48 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED47 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED46 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED45 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED44 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED43 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED42 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED41 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED40 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED39 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED38 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED37 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED36 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED35 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED34 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED33 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED32 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED31 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED30 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED29 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED28 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED27 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED26 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED25 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED24 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED23 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED22 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED21 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED20 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED19 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED18 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED17 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED16 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED15 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED14 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED13 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED12 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED11 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED10 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                               ;
+; Off            ; 0     ; Unsigned Binary                               ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|lights:LED9 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                              ;
+; Off            ; 0     ; Unsigned Binary                              ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED8 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; On             ; 1     ; Unsigned Binary                                   ;
+; Off            ; 0     ; Unsigned Binary                                   ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED7 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; On             ; 1     ; Unsigned Binary                                   ;
+; Off            ; 0     ; Unsigned Binary                                   ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED6 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; On             ; 1     ; Unsigned Binary                                   ;
+; Off            ; 0     ; Unsigned Binary                                   ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED5 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; On             ; 1     ; Unsigned Binary                                   ;
+; Off            ; 0     ; Unsigned Binary                                   ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED4 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; On             ; 1     ; Unsigned Binary                                   ;
+; Off            ; 0     ; Unsigned Binary                                   ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|center:LED3 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; On             ; 1     ; Unsigned Binary                              ;
+; Off            ; 0     ; Unsigned Binary                              ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED2 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; On             ; 1     ; Unsigned Binary                                   ;
+; Off            ; 0     ; Unsigned Binary                                   ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frog:setFrog|bottomLight:LED1 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; On             ; 1     ; Unsigned Binary                                   ;
+; Off            ; 0     ; Unsigned Binary                                   ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "frog:setFrog|lights:LED57" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; NU   ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "frog:setFrog|lights:LED58" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; NU   ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "frog:setFrog|lights:LED59" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; NU   ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "frog:setFrog|lights:LED60" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; NU   ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "frog:setFrog|lights:LED61" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; NU   ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "frog:setFrog|lights:LED62" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; NU   ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "frog:setFrog|lights:LED63" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; NU   ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "frog:setFrog|lights:LED64" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; NU   ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divider:clkdiv"                                                                                ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                  ; Type   ; Severity ; Details                                                                             ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; divided_clock[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; divided_clock[14..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 135                         ;
+;     SCLR              ; 91                          ;
+;     SCLR SLD          ; 4                           ;
+;     SLD               ; 1                           ;
+;     plain             ; 39                          ;
+; arriav_lcell_comb     ; 268                         ;
+;     arith             ; 15                          ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 1                           ;
+;     extend            ; 22                          ;
+;         7 data inputs ; 22                          ;
+;     normal            ; 231                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 18                          ;
+;         4 data inputs ; 68                          ;
+;         5 data inputs ; 30                          ;
+;         6 data inputs ; 68                          ;
+; boundary_port         ; 51                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.40                        ;
+; Average LUT depth     ; 1.85                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -162,49 +1304,59 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Mar 03 14:33:57 2018
+    Info: Processing started: Sun Mar 04 00:27:21 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
-    Info (12023): Found entity 1: DE1_SoC File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file driver.sv
-    Info (12023): Found entity 1: driver File: C:/Users/Son Tran/Desktop/lab8/driver.sv Line: 1
-Info (12021): Found 2 design units, including 2 entities, in source file inputuser.sv
-    Info (12023): Found entity 1: inputUser File: C:/Users/Son Tran/Desktop/lab8/inputUser.sv Line: 1
-    Info (12023): Found entity 2: handleClick File: C:/Users/Son Tran/Desktop/lab8/inputUser.sv Line: 9
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 2 entities, in source file de1_soc.sv
+    Info (12023): Found entity 1: DE1_SoC File: C:/lab8/DE1_SoC.sv Line: 1
+    Info (12023): Found entity 2: clock_divider File: C:/lab8/DE1_SoC.sv Line: 21
+Info (12021): Found 3 design units, including 3 entities, in source file inputuser.sv
+    Info (12023): Found entity 1: inputUser File: C:/lab8/inputUser.sv Line: 1
+    Info (12023): Found entity 2: handleClick File: C:/lab8/inputUser.sv Line: 12
+    Info (12023): Found entity 3: handleClick_testbench File: C:/lab8/inputUser.sv Line: 46
+Info (12021): Found 1 design units, including 1 entities, in source file lights.sv
+    Info (12023): Found entity 1: lights File: C:/lab8/lights.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file frog.sv
-    Info (12023): Found entity 1: frog File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 1
+    Info (12023): Found entity 1: frog File: C:/lab8/frog.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file center.sv
+    Info (12023): Found entity 1: center File: C:/lab8/center.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bottomlight.sv
+    Info (12023): Found entity 1: bottomLight File: C:/lab8/bottomLight.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file led_matrix_driver.sv
+    Info (12023): Found entity 1: led_matrix_driver File: C:/lab8/led_matrix_driver.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cars.sv
+    Info (12023): Found entity 1: cars File: C:/lab8/cars.sv Line: 1
 Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
-Info (10041): Inferred latch for "green_array[0][0]" at DE1_SoC.sv(24) File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 24
-Info (10041): Inferred latch for "green_array[0][1]" at DE1_SoC.sv(24) File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 24
-Info (10041): Inferred latch for "green_array[1][0]" at DE1_SoC.sv(24) File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 24
-Info (10041): Inferred latch for "green_array[1][1]" at DE1_SoC.sv(24) File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 24
-Info (12128): Elaborating entity "inputUser" for hierarchy "inputUser:in" File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 21
-Info (12128): Elaborating entity "handleClick" for hierarchy "inputUser:in|handleClick:Right" File: C:/Users/Son Tran/Desktop/lab8/inputUser.sv Line: 5
-Info (12128): Elaborating entity "frog" for hierarchy "frog:setFrog" File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 22
-Warning (10230): Verilog HDL assignment warning at frog.sv(14): truncated value with size 32 to match size of target (1) File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 14
-Warning (10230): Verilog HDL assignment warning at frog.sv(16): truncated value with size 32 to match size of target (1) File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 16
-Warning (10230): Verilog HDL assignment warning at frog.sv(18): truncated value with size 32 to match size of target (1) File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 18
-Warning (10230): Verilog HDL assignment warning at frog.sv(20): truncated value with size 32 to match size of target (1) File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 20
-Warning (10240): Verilog HDL Always Construct warning at frog.sv(13): inferring latch(es) for variable "nsx", which holds its previous value in one or more paths through the always construct File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 13
-Warning (10240): Verilog HDL Always Construct warning at frog.sv(13): inferring latch(es) for variable "nsy", which holds its previous value in one or more paths through the always construct File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 13
-Error (10166): SystemVerilog RTL Coding error at frog.sv(13): always_comb construct does not infer purely combinational logic. File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 13
-Warning (10230): Verilog HDL assignment warning at frog.sv(28): truncated value with size 32 to match size of target (1) File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at frog.sv(29): truncated value with size 32 to match size of target (1) File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 29
-Info (10041): Inferred latch for "nsy" at frog.sv(15) File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 15
-Info (10041): Inferred latch for "nsx" at frog.sv(15) File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 15
-Error (12152): Can't elaborate user hierarchy "frog:setFrog" File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 22
-Info (144001): Generated suppressed messages file C:/Users/Son Tran/Desktop/lab8/output_files/DE1_SoC.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 8 warnings
-    Error: Peak virtual memory: 690 megabytes
-    Error: Processing ended: Sat Mar 03 14:34:12 2018
-    Error: Elapsed time: 00:00:15
-    Error: Total CPU time (on all processors): 00:00:35
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:clkdiv" File: C:/lab8/DE1_SoC.sv Line: 9
+Info (12128): Elaborating entity "inputUser" for hierarchy "inputUser:inputpress" File: C:/lab8/DE1_SoC.sv Line: 15
+Info (12128): Elaborating entity "handleClick" for hierarchy "inputUser:inputpress|handleClick:Left" File: C:/lab8/inputUser.sv Line: 5
+Info (12128): Elaborating entity "frog" for hierarchy "frog:setFrog" File: C:/lab8/DE1_SoC.sv Line: 16
+Info (12128): Elaborating entity "lights" for hierarchy "frog:setFrog|lights:LED64" File: C:/lab8/frog.sv Line: 10
+Info (12128): Elaborating entity "bottomLight" for hierarchy "frog:setFrog|bottomLight:LED8" File: C:/lab8/frog.sv Line: 73
+Info (12128): Elaborating entity "center" for hierarchy "frog:setFrog|center:LED3" File: C:/lab8/frog.sv Line: 78
+Info (12128): Elaborating entity "cars" for hierarchy "cars:getCar" File: C:/lab8/DE1_SoC.sv Line: 17
+Info (12128): Elaborating entity "led_matrix_driver" for hierarchy "led_matrix_driver:driver" File: C:/lab8/DE1_SoC.sv Line: 18
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "frog:setFrog|resetfield" is missing source, defaulting to GND File: C:/lab8/frog.sv Line: 5
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 16 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/lab8/output_files/DE1_SoC.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 335 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 36 output pins
+    Info (21061): Implemented 284 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 720 megabytes
+    Info: Processing ended: Sun Mar 04 00:27:32 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:25
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Son Tran/Desktop/lab8/output_files/DE1_SoC.map.smsg.
+The suppressed messages can be found in C:/lab8/output_files/DE1_SoC.map.smsg.
 
 
