@@ -1,5 +1,5 @@
 Fitter report for DE1_SoC
-Sun Mar 04 00:28:14 2018
+Sun Mar 04 14:27:21 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -64,15 +64,15 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sun Mar 04 00:28:14 2018       ;
+; Fitter Status                   ; Successful - Sun Mar 04 14:27:21 2018       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; DE1_SoC                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 176 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 135                                         ;
+; Logic utilization (in ALMs)     ; 192 / 32,070 ( < 1 % )                      ;
+; Total registers                 ; 137                                         ;
 ; Total pins                      ; 51 / 457 ( 11 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
@@ -152,27 +152,26 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
-; Maximum used               ; 4           ;
+; Average used               ; 1.02        ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.2%      ;
-;     Processor 3            ;   1.2%      ;
-;     Processor 4            ;   1.2%      ;
+;     Processor 2            ;   1.8%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Netlist Optimizations                                                                                                                                        ;
-+-----------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
-; Node                  ; Action  ; Operation ; Reason                     ; Node Port ; Node Port Name ; Destination Node ; Destination Port ; Destination Port Name ;
-+-----------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
-; CLOCK_50~inputCLKENA0 ; Created ; Placement ; Fitter Periphery Placement ;           ;                ;                  ;                  ;                       ;
-+-----------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                                                                                                          ;
++-----------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+---------------------------------------------+------------------+-----------------------+
+; Node                              ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                            ; Destination Port ; Destination Port Name ;
++-----------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+---------------------------------------------+------------------+-----------------------+
+; CLOCK_50~inputCLKENA0             ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                             ;                  ;                       ;
+; led_matrix_driver:driver|count[0] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; led_matrix_driver:driver|count[0]~DUPLICATE ;                  ;                       ;
++-----------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+---------------------------------------------+------------------+-----------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
@@ -696,8 +695,8 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 498 ) ; 0.00 % ( 0 / 498 )         ; 0.00 % ( 0 / 498 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 498 ) ; 0.00 % ( 0 / 498 )         ; 0.00 % ( 0 / 498 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 533 ) ; 0.00 % ( 0 / 533 )         ; 0.00 % ( 0 / 533 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 533 ) ; 0.00 % ( 0 / 533 )         ; 0.00 % ( 0 / 533 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -720,7 +719,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 498 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 533 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -728,7 +727,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/lab8/output_files/DE1_SoC.pin.
+The pin-out file can be found in C:/Users/Son Tran/Desktop/lab8/output_files/DE1_SoC.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -736,14 +735,14 @@ The pin-out file can be found in C:/lab8/output_files/DE1_SoC.pin.
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 176 / 32,070       ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 176                ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 188 / 32,070       ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 47                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 120                ;       ;
-;         [c] ALMs used for registers                         ; 21                 ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 192 / 32,070       ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 192                ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 197 / 32,070       ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 38                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 128                ;       ;
+;         [c] ALMs used for registers                         ; 31                 ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 12 / 32,070        ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 5 / 32,070         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32,070         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -752,25 +751,25 @@ The pin-out file can be found in C:/lab8/output_files/DE1_SoC.pin.
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 24 / 3,207         ; < 1 % ;
-;     -- Logic LABs                                           ; 24                 ;       ;
+; Total LABs:  partially or completely used                   ; 28 / 3,207         ; < 1 % ;
+;     -- Logic LABs                                           ; 28                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 260                ;       ;
-;     -- 7 input functions                                    ; 22                 ;       ;
-;     -- 6 input functions                                    ; 68                 ;       ;
-;     -- 5 input functions                                    ; 30                 ;       ;
-;     -- 4 input functions                                    ; 68                 ;       ;
-;     -- <=3 input functions                                  ; 72                 ;       ;
+; Combinational ALUT usage for logic                          ; 294                ;       ;
+;     -- 7 input functions                                    ; 0                  ;       ;
+;     -- 6 input functions                                    ; 88                 ;       ;
+;     -- 5 input functions                                    ; 8                  ;       ;
+;     -- 4 input functions                                    ; 114                ;       ;
+;     -- <=3 input functions                                  ; 84                 ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 1                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 135                ;       ;
+; Dedicated logic registers                                   ; 137                ;       ;
 ;     -- By type:                                             ;                    ;       ;
-;         -- Primary logic registers                          ; 135 / 64,140       ; < 1 % ;
-;         -- Secondary logic registers                        ; 0 / 64,140         ; 0 %   ;
+;         -- Primary logic registers                          ; 136 / 64,140       ; < 1 % ;
+;         -- Secondary logic registers                        ; 1 / 64,140         ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
-;         -- Design implementation registers                  ; 135                ;       ;
-;         -- Routing optimization registers                   ; 0                  ;       ;
+;         -- Design implementation registers                  ; 136                ;       ;
+;         -- Routing optimization registers                   ; 1                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 51 / 457           ; 11 %  ;
@@ -826,10 +825,10 @@ The pin-out file can be found in C:/lab8/output_files/DE1_SoC.pin.
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.2% / 0.2% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 4.3% / 4.8% / 3.2% ;       ;
-; Maximum fan-out                                             ; 120                ;       ;
-; Highest non-global fan-out                                  ; 120                ;       ;
-; Total fan-out                                               ; 1589               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 5.3% / 5.7% / 4.3% ;       ;
+; Maximum fan-out                                             ; 122                ;       ;
+; Highest non-global fan-out                                  ; 122                ;       ;
+; Total fan-out                                               ; 1699               ;       ;
 ; Average fan-out                                             ; 3.18               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
@@ -839,14 +838,14 @@ The pin-out file can be found in C:/lab8/output_files/DE1_SoC.pin.
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Statistic                                                   ; Top                   ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+-----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 176 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 176                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 188 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 47                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 120                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 21                    ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 192 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 192                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 197 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 38                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 128                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 31                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 12 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 5 / 32070 ( < 1 % )   ; 0 / 32070 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32070 ( 0 % )     ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
@@ -855,16 +854,16 @@ The pin-out file can be found in C:/lab8/output_files/DE1_SoC.pin.
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 24 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
-;     -- Logic LABs                                           ; 24                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 28 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
+;     -- Logic LABs                                           ; 28                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
-; Combinational ALUT usage for logic                          ; 260                   ; 0                              ;
-;     -- 7 input functions                                    ; 22                    ; 0                              ;
-;     -- 6 input functions                                    ; 68                    ; 0                              ;
-;     -- 5 input functions                                    ; 30                    ; 0                              ;
-;     -- 4 input functions                                    ; 68                    ; 0                              ;
-;     -- <=3 input functions                                  ; 72                    ; 0                              ;
+; Combinational ALUT usage for logic                          ; 294                   ; 0                              ;
+;     -- 7 input functions                                    ; 0                     ; 0                              ;
+;     -- 6 input functions                                    ; 88                    ; 0                              ;
+;     -- 5 input functions                                    ; 8                     ; 0                              ;
+;     -- 4 input functions                                    ; 114                   ; 0                              ;
+;     -- <=3 input functions                                  ; 84                    ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 1                     ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
@@ -872,11 +871,11 @@ The pin-out file can be found in C:/lab8/output_files/DE1_SoC.pin.
 ;                                                             ;                       ;                                ;
 ; Dedicated logic registers                                   ; 0                     ; 0                              ;
 ;     -- By type:                                             ;                       ;                                ;
-;         -- Primary logic registers                          ; 135 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 0 / 64140 ( 0 % )     ; 0 / 64140 ( 0 % )              ;
+;         -- Primary logic registers                          ; 136 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 1 / 64140 ( < 1 % )   ; 0 / 64140 ( 0 % )              ;
 ;     -- By function:                                         ;                       ;                                ;
-;         -- Design implementation registers                  ; 135                   ; 0                              ;
-;         -- Routing optimization registers                   ; 0                     ; 0                              ;
+;         -- Design implementation registers                  ; 136                   ; 0                              ;
+;         -- Routing optimization registers                   ; 1                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ;                                                             ;                       ;                                ;
 ; Virtual pins                                                ; 0                     ; 0                              ;
@@ -893,8 +892,8 @@ The pin-out file can be found in C:/lab8/output_files/DE1_SoC.pin.
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 1589                  ; 0                              ;
-;     -- Registered Connections                               ; 1013                  ; 0                              ;
+;     -- Total Connections                                    ; 1699                  ; 0                              ;
+;     -- Registered Connections                               ; 966                   ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
 ;     -- Top                                                  ; 0                     ; 0                              ;
@@ -931,16 +930,16 @@ The pin-out file can be found in C:/lab8/output_files/DE1_SoC.pin.
 ; KEY[1]   ; AA15  ; 3B       ; 36           ; 0            ; 17           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; KEY[2]   ; W15   ; 3B       ; 40           ; 0            ; 0            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; KEY[3]   ; Y16   ; 3B       ; 40           ; 0            ; 17           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[0]    ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[1]    ; AC12  ; 3A       ; 16           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[2]    ; AF9   ; 3A       ; 8            ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[3]    ; AF10  ; 3A       ; 4            ; 0            ; 51           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[4]    ; AD11  ; 3A       ; 2            ; 0            ; 40           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[5]    ; AD12  ; 3A       ; 16           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[6]    ; AE11  ; 3A       ; 4            ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[7]    ; AC9   ; 3A       ; 4            ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[8]    ; AD10  ; 3A       ; 4            ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[9]    ; AE12  ; 3A       ; 2            ; 0            ; 57           ; 116                   ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[0]    ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[1]    ; AC12  ; 3A       ; 16           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[2]    ; AF9   ; 3A       ; 8            ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[3]    ; AF10  ; 3A       ; 4            ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[4]    ; AD11  ; 3A       ; 2            ; 0            ; 40           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[5]    ; AD12  ; 3A       ; 16           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[6]    ; AE11  ; 3A       ; 4            ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[7]    ; AC9   ; 3A       ; 4            ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[8]    ; AD10  ; 3A       ; 4            ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[9]    ; AE12  ; 3A       ; 2            ; 0            ; 57           ; 118                   ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -1964,80 +1963,82 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node    ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name       ; Library Name ;
 +-------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------+-------------------+--------------+
-; |DE1_SoC                      ; 175.5 (1.5)          ; 187.0 (1.8)                      ; 11.5 (0.3)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 260 (5)             ; 135 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 51   ; 0            ; |DE1_SoC                                        ; DE1_SoC           ; work         ;
-;    |cars:getCar|              ; 14.8 (14.8)          ; 17.5 (17.5)                      ; 2.7 (2.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 44 (44)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|cars:getCar                            ; cars              ; work         ;
+; |DE1_SoC                      ; 191.5 (0.5)          ; 195.5 (0.5)                      ; 4.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 294 (1)             ; 137 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 51   ; 0            ; |DE1_SoC                                        ; DE1_SoC           ; work         ;
+;    |LSFR:randomize|           ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|LSFR:randomize                         ; LSFR              ; work         ;
+;    |adder:add|                ; 2.7 (2.7)            ; 2.7 (2.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|adder:add                              ; adder             ; work         ;
+;    |cars:getCar|              ; 17.1 (17.1)          ; 17.1 (17.1)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 21 (21)             ; 44 (44)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|cars:getCar                            ; cars              ; work         ;
 ;    |clock_divider:clkdiv|     ; 8.0 (8.0)            ; 8.5 (8.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 16 (16)             ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider:clkdiv                   ; clock_divider     ; work         ;
-;    |frog:setFrog|             ; 112.5 (0.0)          ; 123.0 (0.0)                      ; 10.5 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 158 (0)             ; 64 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog                           ; frog              ; work         ;
-;       |bottomLight:LED1|      ; 2.6 (2.6)            ; 2.6 (2.6)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED1          ; bottomLight       ; work         ;
-;       |bottomLight:LED2|      ; 1.6 (1.6)            ; 1.6 (1.6)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED2          ; bottomLight       ; work         ;
-;       |bottomLight:LED4|      ; 1.5 (1.5)            ; 1.8 (1.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED4          ; bottomLight       ; work         ;
-;       |bottomLight:LED5|      ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED5          ; bottomLight       ; work         ;
-;       |bottomLight:LED6|      ; 1.7 (1.7)            ; 1.8 (1.8)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED6          ; bottomLight       ; work         ;
-;       |bottomLight:LED7|      ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED7          ; bottomLight       ; work         ;
-;       |bottomLight:LED8|      ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED8          ; bottomLight       ; work         ;
-;       |center:LED3|           ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|center:LED3               ; center            ; work         ;
-;       |lights:LED10|          ; 1.5 (1.5)            ; 2.0 (2.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED10              ; lights            ; work         ;
-;       |lights:LED11|          ; 1.3 (1.3)            ; 1.5 (1.5)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED11              ; lights            ; work         ;
-;       |lights:LED12|          ; 2.2 (2.2)            ; 2.3 (2.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED12              ; lights            ; work         ;
-;       |lights:LED13|          ; 2.1 (2.1)            ; 2.1 (2.1)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED13              ; lights            ; work         ;
-;       |lights:LED14|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED14              ; lights            ; work         ;
-;       |lights:LED15|          ; 2.0 (2.0)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED15              ; lights            ; work         ;
-;       |lights:LED16|          ; 2.0 (2.0)            ; 2.5 (2.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED16              ; lights            ; work         ;
-;       |lights:LED17|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED17              ; lights            ; work         ;
-;       |lights:LED18|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED18              ; lights            ; work         ;
-;       |lights:LED19|          ; 1.5 (1.5)            ; 2.0 (2.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED19              ; lights            ; work         ;
-;       |lights:LED20|          ; 1.3 (1.3)            ; 1.5 (1.5)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED20              ; lights            ; work         ;
+;    |frog:setFrog|             ; 122.5 (0.0)          ; 126.8 (0.0)                      ; 4.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 180 (0)             ; 64 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog                           ; frog              ; work         ;
+;       |bottomLight:LED1|      ; 2.3 (2.3)            ; 2.8 (2.8)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED1          ; bottomLight       ; work         ;
+;       |bottomLight:LED2|      ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED2          ; bottomLight       ; work         ;
+;       |bottomLight:LED4|      ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED4          ; bottomLight       ; work         ;
+;       |bottomLight:LED5|      ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED5          ; bottomLight       ; work         ;
+;       |bottomLight:LED6|      ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED6          ; bottomLight       ; work         ;
+;       |bottomLight:LED7|      ; 1.7 (1.7)            ; 1.8 (1.8)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED7          ; bottomLight       ; work         ;
+;       |bottomLight:LED8|      ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED8          ; bottomLight       ; work         ;
+;       |center:LED3|           ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|center:LED3               ; center            ; work         ;
+;       |lights:LED10|          ; 2.0 (2.0)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED10              ; lights            ; work         ;
+;       |lights:LED11|          ; 1.7 (1.7)            ; 1.7 (1.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED11              ; lights            ; work         ;
+;       |lights:LED12|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED12              ; lights            ; work         ;
+;       |lights:LED13|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED13              ; lights            ; work         ;
+;       |lights:LED14|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED14              ; lights            ; work         ;
+;       |lights:LED15|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED15              ; lights            ; work         ;
+;       |lights:LED16|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED16              ; lights            ; work         ;
+;       |lights:LED17|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED17              ; lights            ; work         ;
+;       |lights:LED18|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED18              ; lights            ; work         ;
+;       |lights:LED19|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED19              ; lights            ; work         ;
+;       |lights:LED20|          ; 2.0 (2.0)            ; 2.5 (2.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED20              ; lights            ; work         ;
 ;       |lights:LED21|          ; 2.0 (2.0)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED21              ; lights            ; work         ;
-;       |lights:LED22|          ; 2.0 (2.0)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED22              ; lights            ; work         ;
-;       |lights:LED23|          ; 1.9 (1.9)            ; 1.9 (1.9)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED23              ; lights            ; work         ;
-;       |lights:LED24|          ; 1.9 (1.9)            ; 2.5 (2.5)                        ; 0.6 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED24              ; lights            ; work         ;
-;       |lights:LED25|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED25              ; lights            ; work         ;
-;       |lights:LED26|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED26              ; lights            ; work         ;
-;       |lights:LED27|          ; 1.5 (1.5)            ; 2.0 (2.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED27              ; lights            ; work         ;
-;       |lights:LED28|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED28              ; lights            ; work         ;
-;       |lights:LED29|          ; 2.0 (2.0)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED29              ; lights            ; work         ;
-;       |lights:LED30|          ; 2.0 (2.0)            ; 2.5 (2.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED30              ; lights            ; work         ;
-;       |lights:LED31|          ; 1.9 (1.9)            ; 1.9 (1.9)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED31              ; lights            ; work         ;
-;       |lights:LED32|          ; 2.1 (2.1)            ; 2.2 (2.2)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED32              ; lights            ; work         ;
-;       |lights:LED33|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED33              ; lights            ; work         ;
-;       |lights:LED34|          ; 1.5 (1.5)            ; 2.0 (2.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED34              ; lights            ; work         ;
-;       |lights:LED35|          ; 1.5 (1.5)            ; 1.7 (1.7)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED35              ; lights            ; work         ;
-;       |lights:LED36|          ; 1.5 (1.5)            ; 2.0 (2.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED36              ; lights            ; work         ;
-;       |lights:LED37|          ; 2.0 (2.0)            ; 2.5 (2.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED37              ; lights            ; work         ;
-;       |lights:LED38|          ; 2.1 (2.1)            ; 2.5 (2.5)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED38              ; lights            ; work         ;
-;       |lights:LED39|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED39              ; lights            ; work         ;
-;       |lights:LED40|          ; 1.9 (1.9)            ; 2.3 (2.3)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED40              ; lights            ; work         ;
-;       |lights:LED41|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED41              ; lights            ; work         ;
-;       |lights:LED42|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED42              ; lights            ; work         ;
-;       |lights:LED43|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED43              ; lights            ; work         ;
-;       |lights:LED44|          ; 1.5 (1.5)            ; 1.7 (1.7)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED44              ; lights            ; work         ;
-;       |lights:LED45|          ; 1.9 (1.9)            ; 2.5 (2.5)                        ; 0.6 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED45              ; lights            ; work         ;
-;       |lights:LED46|          ; 2.0 (2.0)            ; 2.5 (2.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED46              ; lights            ; work         ;
-;       |lights:LED47|          ; 1.9 (1.9)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED47              ; lights            ; work         ;
-;       |lights:LED48|          ; 2.2 (2.2)            ; 2.3 (2.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED48              ; lights            ; work         ;
-;       |lights:LED49|          ; 1.3 (1.3)            ; 1.5 (1.5)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED49              ; lights            ; work         ;
-;       |lights:LED50|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED50              ; lights            ; work         ;
-;       |lights:LED51|          ; 1.5 (1.5)            ; 2.0 (2.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED51              ; lights            ; work         ;
-;       |lights:LED52|          ; 1.3 (1.3)            ; 1.7 (1.7)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED52              ; lights            ; work         ;
-;       |lights:LED53|          ; 2.0 (2.0)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED53              ; lights            ; work         ;
+;       |lights:LED22|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED22              ; lights            ; work         ;
+;       |lights:LED23|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED23              ; lights            ; work         ;
+;       |lights:LED24|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED24              ; lights            ; work         ;
+;       |lights:LED25|          ; 2.0 (2.0)            ; 2.2 (2.2)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED25              ; lights            ; work         ;
+;       |lights:LED26|          ; 1.9 (1.9)            ; 2.0 (2.0)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED26              ; lights            ; work         ;
+;       |lights:LED27|          ; 1.9 (1.9)            ; 2.3 (2.3)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED27              ; lights            ; work         ;
+;       |lights:LED28|          ; 2.1 (2.1)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED28              ; lights            ; work         ;
+;       |lights:LED29|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED29              ; lights            ; work         ;
+;       |lights:LED30|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED30              ; lights            ; work         ;
+;       |lights:LED31|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED31              ; lights            ; work         ;
+;       |lights:LED32|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED32              ; lights            ; work         ;
+;       |lights:LED33|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED33              ; lights            ; work         ;
+;       |lights:LED34|          ; 1.8 (1.8)            ; 2.0 (2.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED34              ; lights            ; work         ;
+;       |lights:LED35|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED35              ; lights            ; work         ;
+;       |lights:LED36|          ; 1.9 (1.9)            ; 2.3 (2.3)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED36              ; lights            ; work         ;
+;       |lights:LED37|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED37              ; lights            ; work         ;
+;       |lights:LED38|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED38              ; lights            ; work         ;
+;       |lights:LED39|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED39              ; lights            ; work         ;
+;       |lights:LED40|          ; 2.0 (2.0)            ; 2.5 (2.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED40              ; lights            ; work         ;
+;       |lights:LED41|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED41              ; lights            ; work         ;
+;       |lights:LED42|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED42              ; lights            ; work         ;
+;       |lights:LED43|          ; 1.8 (1.8)            ; 2.0 (2.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED43              ; lights            ; work         ;
+;       |lights:LED44|          ; 1.8 (1.8)            ; 2.5 (2.5)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED44              ; lights            ; work         ;
+;       |lights:LED45|          ; 1.9 (1.9)            ; 2.0 (2.0)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED45              ; lights            ; work         ;
+;       |lights:LED46|          ; 1.8 (1.8)            ; 2.0 (2.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED46              ; lights            ; work         ;
+;       |lights:LED47|          ; 1.8 (1.8)            ; 2.0 (2.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED47              ; lights            ; work         ;
+;       |lights:LED48|          ; 2.0 (2.0)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED48              ; lights            ; work         ;
+;       |lights:LED49|          ; 1.8 (1.8)            ; 2.0 (2.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED49              ; lights            ; work         ;
+;       |lights:LED50|          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED50              ; lights            ; work         ;
+;       |lights:LED51|          ; 1.9 (1.9)            ; 2.0 (2.0)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED51              ; lights            ; work         ;
+;       |lights:LED52|          ; 1.8 (1.8)            ; 2.0 (2.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED52              ; lights            ; work         ;
+;       |lights:LED53|          ; 1.8 (1.8)            ; 2.2 (2.2)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED53              ; lights            ; work         ;
 ;       |lights:LED54|          ; 1.9 (1.9)            ; 2.3 (2.3)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED54              ; lights            ; work         ;
-;       |lights:LED55|          ; 2.0 (2.0)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED55              ; lights            ; work         ;
-;       |lights:LED56|          ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED56              ; lights            ; work         ;
-;       |lights:LED57|          ; 1.8 (1.8)            ; 2.3 (2.3)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED57              ; lights            ; work         ;
-;       |lights:LED58|          ; 1.5 (1.5)            ; 1.7 (1.7)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED58              ; lights            ; work         ;
-;       |lights:LED59|          ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED59              ; lights            ; work         ;
-;       |lights:LED60|          ; 1.5 (1.5)            ; 1.8 (1.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED60              ; lights            ; work         ;
-;       |lights:LED61|          ; 1.3 (1.3)            ; 1.4 (1.4)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED61              ; lights            ; work         ;
-;       |lights:LED62|          ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED62              ; lights            ; work         ;
-;       |lights:LED63|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED63              ; lights            ; work         ;
-;       |lights:LED64|          ; 1.3 (1.3)            ; 1.7 (1.7)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED64              ; lights            ; work         ;
-;       |lights:LED9|           ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED9               ; lights            ; work         ;
-;    |inputUser:inputpress|     ; 3.0 (0.0)            ; 3.5 (0.0)                        ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (0)               ; 8 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress                   ; inputUser         ; work         ;
-;       |handleClick:Down|      ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Down  ; handleClick       ; work         ;
-;       |handleClick:Left|      ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Left  ; handleClick       ; work         ;
-;       |handleClick:Right|     ; 0.8 (0.8)            ; 1.0 (1.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Right ; handleClick       ; work         ;
-;       |handleClick:Up|        ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Up    ; handleClick       ; work         ;
-;    |led_matrix_driver:driver| ; 32.7 (32.7)          ; 32.7 (32.7)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 57 (57)             ; 3 (3)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|led_matrix_driver:driver               ; led_matrix_driver ; work         ;
+;       |lights:LED55|          ; 1.9 (1.9)            ; 2.0 (2.0)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED55              ; lights            ; work         ;
+;       |lights:LED56|          ; 1.8 (1.8)            ; 2.0 (2.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED56              ; lights            ; work         ;
+;       |lights:LED57|          ; 1.8 (1.8)            ; 2.0 (2.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED57              ; lights            ; work         ;
+;       |lights:LED58|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED58              ; lights            ; work         ;
+;       |lights:LED59|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED59              ; lights            ; work         ;
+;       |lights:LED60|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED60              ; lights            ; work         ;
+;       |lights:LED61|          ; 1.5 (1.5)            ; 1.8 (1.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED61              ; lights            ; work         ;
+;       |lights:LED62|          ; 1.5 (1.5)            ; 1.8 (1.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED62              ; lights            ; work         ;
+;       |lights:LED63|          ; 1.5 (1.5)            ; 1.8 (1.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED63              ; lights            ; work         ;
+;       |lights:LED64|          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED64              ; lights            ; work         ;
+;       |lights:LED9|           ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED9               ; lights            ; work         ;
+;    |inputUser:inputpress|     ; 4.0 (0.0)            ; 4.2 (0.0)                        ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (0)               ; 8 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress                   ; inputUser         ; work         ;
+;       |handleClick:Down|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Down  ; handleClick       ; work         ;
+;       |handleClick:Left|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Left  ; handleClick       ; work         ;
+;       |handleClick:Right|     ; 1.0 (1.0)            ; 1.1 (1.1)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Right ; handleClick       ; work         ;
+;       |handleClick:Up|        ; 1.0 (1.0)            ; 1.1 (1.1)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Up    ; handleClick       ; work         ;
+;    |led_matrix_driver:driver| ; 33.7 (33.7)          ; 35.0 (35.0)                      ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 57 (57)             ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|led_matrix_driver:driver               ; led_matrix_driver ; work         ;
 +-------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2083,21 +2084,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO_0[33] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; GPIO_0[34] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; GPIO_0[35] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; SW[0]      ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[1]      ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[2]      ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[3]      ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[4]      ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[5]      ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[6]      ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[7]      ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[8]      ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[9]      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; CLOCK_50   ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY[3]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; CLOCK_50   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[3]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY[1]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY[0]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY[2]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[0]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[2]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[8]      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[7]      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[6]      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[5]      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[4]      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[3]      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[2]      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[1]      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[0]      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -2106,44 +2107,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                                     ; Pad To Core Index ; Setting ;
 +---------------------------------------------------------+-------------------+---------+
-; SW[0]                                                   ;                   ;         ;
-; SW[1]                                                   ;                   ;         ;
-; SW[2]                                                   ;                   ;         ;
-; SW[3]                                                   ;                   ;         ;
-; SW[4]                                                   ;                   ;         ;
-; SW[5]                                                   ;                   ;         ;
-; SW[6]                                                   ;                   ;         ;
-; SW[7]                                                   ;                   ;         ;
-; SW[8]                                                   ;                   ;         ;
 ; SW[9]                                                   ;                   ;         ;
-;      - cars:getCar|red_array[5][7]                      ; 0                 ; 0       ;
-;      - inputUser:inputpress|handleClick:Down|prev       ; 0                 ; 0       ;
-;      - inputUser:inputpress|handleClick:Left|prev       ; 0                 ; 0       ;
-;      - inputUser:inputpress|handleClick:Right|prev      ; 0                 ; 0       ;
-;      - inputUser:inputpress|handleClick:Up|prev         ; 0                 ; 0       ;
-;      - cars:getCar|red_array[3][1]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[1][0]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[4][0]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[6][0]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[2][1]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[6][5]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[5][1]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[1][2]                      ; 0                 ; 0       ;
 ;      - cars:getCar|red_array[2][0]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[1][0]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[5][7]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[1][7]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[5][6]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[3][6]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[1][6]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[3][7]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[3][5]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[5][4]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[6][4]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[4][4]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[4][1]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[6][5]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[2][1]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[3][1]                      ; 0                 ; 0       ;
 ;      - cars:getCar|red_array[4][3]                      ; 0                 ; 0       ;
 ;      - cars:getCar|red_array[6][3]                      ; 0                 ; 0       ;
 ;      - cars:getCar|red_array[1][4]                      ; 0                 ; 0       ;
 ;      - cars:getCar|red_array[3][4]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[4][4]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[6][4]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[5][4]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[3][5]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[1][6]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[3][6]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[5][6]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[1][7]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[3][7]                      ; 0                 ; 0       ;
-;      - cars:getCar|red_array[4][1]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[1][2]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[6][0]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[4][0]                      ; 0                 ; 0       ;
+;      - cars:getCar|red_array[5][1]                      ; 0                 ; 0       ;
 ;      - frog:setFrog|bottomLight:LED1|lightOn            ; 0                 ; 0       ;
 ;      - frog:setFrog|lights:LED25|lightOn                ; 0                 ; 0       ;
 ;      - frog:setFrog|lights:LED9|lightOn                 ; 0                 ; 0       ;
@@ -2212,7 +2200,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - inputUser:inputpress|handleClick:Right|out       ; 0                 ; 0       ;
 ;      - inputUser:inputpress|handleClick:Up|out          ; 0                 ; 0       ;
 ;      - inputUser:inputpress|handleClick:Down|out        ; 0                 ; 0       ;
-;      - cars:getCar|red_array~0                          ; 0                 ; 0       ;
+;      - cars:getCar|red_array[3][2]~0                    ; 0                 ; 0       ;
 ;      - cars:getCar|red_array~1                          ; 0                 ; 0       ;
 ;      - cars:getCar|red_array~2                          ; 0                 ; 0       ;
 ;      - cars:getCar|red_array~3                          ; 0                 ; 0       ;
@@ -2232,37 +2220,62 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - cars:getCar|red_array~17                         ; 0                 ; 0       ;
 ;      - cars:getCar|red_array~18                         ; 0                 ; 0       ;
 ;      - cars:getCar|red_array~19                         ; 0                 ; 0       ;
+;      - cars:getCar|red_array~20                         ; 0                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Left|prev~0     ; 0                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Up|prev~0       ; 0                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Down|prev~0     ; 0                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Right|prev~0    ; 0                 ; 0       ;
+;      - LSFR:randomize|random[0]~0                       ; 0                 ; 0       ;
 ; CLOCK_50                                                ;                   ;         ;
-;      - clock_divider:clkdiv|divided_clock[15]           ; 1                 ; 0       ;
+;      - clock_divider:clkdiv|divided_clock[15]           ; 0                 ; 0       ;
 ; KEY[3]                                                  ;                   ;         ;
-;      - inputUser:inputpress|handleClick:Left|always0~0  ; 1                 ; 0       ;
-;      - KEY[3]~_wirecell                                 ; 1                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Left|always0~0  ; 0                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Left|prev~0     ; 0                 ; 0       ;
 ; KEY[1]                                                  ;                   ;         ;
 ;      - inputUser:inputpress|handleClick:Up|always0~0    ; 0                 ; 0       ;
-;      - KEY[1]~_wirecell                                 ; 0                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Up|prev~0       ; 0                 ; 0       ;
 ; KEY[0]                                                  ;                   ;         ;
-;      - inputUser:inputpress|handleClick:Down|always0~0  ; 1                 ; 0       ;
-;      - KEY[0]~_wirecell                                 ; 1                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Down|always0~0  ; 0                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Down|prev~0     ; 0                 ; 0       ;
 ; KEY[2]                                                  ;                   ;         ;
-;      - inputUser:inputpress|handleClick:Right|always0~0 ; 0                 ; 0       ;
-;      - KEY[2]~_wirecell                                 ; 0                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Right|always0~0 ; 1                 ; 0       ;
+;      - inputUser:inputpress|handleClick:Right|prev~0    ; 1                 ; 0       ;
+; SW[8]                                                   ;                   ;         ;
+;      - adder:add|Add0~6                                 ; 1                 ; 0       ;
+; SW[7]                                                   ;                   ;         ;
+;      - adder:add|Add0~10                                ; 0                 ; 0       ;
+; SW[6]                                                   ;                   ;         ;
+;      - adder:add|Add0~14                                ; 0                 ; 0       ;
+; SW[5]                                                   ;                   ;         ;
+;      - adder:add|Add0~18                                ; 1                 ; 0       ;
+; SW[4]                                                   ;                   ;         ;
+;      - adder:add|Add0~22                                ; 0                 ; 0       ;
+; SW[3]                                                   ;                   ;         ;
+;      - adder:add|Add0~26                                ; 1                 ; 0       ;
+; SW[2]                                                   ;                   ;         ;
+;      - adder:add|Add0~30                                ; 0                 ; 0       ;
+; SW[1]                                                   ;                   ;         ;
+;      - adder:add|Add0~34                                ; 1                 ; 0       ;
+; SW[0]                                                   ;                   ;         ;
+;      - adder:add|Add0~38                                ; 0                 ; 0       ;
 +---------------------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                               ;
-+--------------------------------------------+---------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                       ; Location      ; Fan-Out ; Usage                   ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------------------+---------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                                   ; PIN_AF14      ; 2       ; Clock                   ; no     ; --                   ; --               ; --                        ;
-; CLOCK_50                                   ; PIN_AF14      ; 15      ; Clock                   ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; SW[9]                                      ; PIN_AE12      ; 116     ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
-; clock_divider:clkdiv|divided_clock[15]     ; FF_X45_Y2_N44 ; 120     ; Clock                   ; no     ; --                   ; --               ; --                        ;
-; inputUser:inputpress|handleClick:Down|out  ; FF_X46_Y4_N53 ; 92      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; inputUser:inputpress|handleClick:Left|out  ; FF_X45_Y3_N11 ; 68      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; inputUser:inputpress|handleClick:Right|out ; FF_X43_Y2_N20 ; 92      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; inputUser:inputpress|handleClick:Up|out    ; FF_X46_Y5_N8  ; 68      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-+--------------------------------------------+---------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                    ;
++--------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                       ; Location           ; Fan-Out ; Usage                   ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
+; CLOCK_50                                   ; PIN_AF14           ; 2       ; Clock                   ; no     ; --                   ; --               ; --                        ;
+; CLOCK_50                                   ; PIN_AF14           ; 15      ; Clock                   ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; SW[9]                                      ; PIN_AE12           ; 118     ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
+; cars:getCar|red_array[3][2]~0              ; LABCELL_X56_Y3_N54 ; 44      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; clock_divider:clkdiv|divided_clock[15]     ; FF_X47_Y3_N44      ; 122     ; Clock                   ; no     ; --                   ; --               ; --                        ;
+; inputUser:inputpress|handleClick:Down|out  ; FF_X46_Y1_N14      ; 68      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; inputUser:inputpress|handleClick:Left|out  ; FF_X46_Y5_N50      ; 68      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; inputUser:inputpress|handleClick:Right|out ; FF_X48_Y3_N47      ; 68      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; inputUser:inputpress|handleClick:Up|out    ; FF_X45_Y4_N44      ; 68      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
++--------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -2279,14 +2292,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 680 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 4 / 13,420 ( < 1 % )    ;
-; C2 interconnects                            ; 228 / 119,108 ( < 1 % ) ;
+; Block interconnects                         ; 695 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 6 / 13,420 ( < 1 % )    ;
+; C2 interconnects                            ; 210 / 119,108 ( < 1 % ) ;
 ; C4 interconnects                            ; 100 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 53 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 85 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -2342,12 +2355,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 148 / 84,580 ( < 1 % )  ;
+; Local interconnects                         ; 160 / 84,580 ( < 1 % )  ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 54 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 55 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 370 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 505 / 266,960 ( < 1 % ) ;
+; R14 interconnects                           ; 48 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 48 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 311 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 359 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
@@ -2447,21 +2460,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO_0[33]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; GPIO_0[34]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; GPIO_0[35]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; KEY[3]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; KEY[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; KEY[2]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
@@ -2513,127 +2526,127 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+----------------------------------------+-------------------+
 ; Source Clock(s)                        ; Destination Clock(s)                   ; Delay Added in ns ;
 +----------------------------------------+----------------------------------------+-------------------+
-; clock_divider:clkdiv|divided_clock[15] ; clock_divider:clkdiv|divided_clock[15] ; 156.8             ;
+; clock_divider:clkdiv|divided_clock[15] ; clock_divider:clkdiv|divided_clock[15] ; 64.5              ;
 ; CLOCK_50                               ; CLOCK_50                               ; 10.5              ;
-; CLOCK_50                               ; clock_divider:clkdiv|divided_clock[15] ; 3.6               ;
+; CLOCK_50                               ; clock_divider:clkdiv|divided_clock[15] ; 1.7               ;
 +----------------------------------------+----------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                              ;
-+--------------------------------------------+-------------------------------------------+-------------------+
-; Source Register                            ; Destination Register                      ; Delay Added in ns ;
-+--------------------------------------------+-------------------------------------------+-------------------+
-; clock_divider:clkdiv|divided_clock[15]     ; clock_divider:clkdiv|divided_clock[15]    ; 5.346             ;
-; cars:getCar|red_array[4][0]                ; cars:getCar|red_array[4][7]               ; 1.031             ;
-; inputUser:inputpress|handleClick:Down|out  ; frog:setFrog|lights:LED36|lightOn         ; 1.015             ;
-; cars:getCar|red_array[5][6]                ; cars:getCar|red_array[5][5]               ; 0.932             ;
-; cars:getCar|red_array[2][3]                ; cars:getCar|red_array[2][2]               ; 0.932             ;
-; cars:getCar|red_array[6][2]                ; cars:getCar|red_array[6][1]               ; 0.932             ;
-; cars:getCar|red_array[1][4]                ; cars:getCar|red_array[1][3]               ; 0.928             ;
-; inputUser:inputpress|handleClick:Left|out  ; frog:setFrog|lights:LED44|lightOn         ; 0.924             ;
-; cars:getCar|red_array[5][4]                ; cars:getCar|red_array[5][3]               ; 0.921             ;
-; cars:getCar|red_array[5][1]                ; cars:getCar|red_array[5][0]               ; 0.921             ;
-; cars:getCar|red_array[2][0]                ; cars:getCar|red_array[2][3]               ; 0.921             ;
-; cars:getCar|red_array[6][3]                ; cars:getCar|red_array[6][2]               ; 0.921             ;
-; cars:getCar|red_array[6][0]                ; cars:getCar|red_array[6][7]               ; 0.921             ;
-; cars:getCar|red_array[5][3]                ; cars:getCar|red_array[5][2]               ; 0.916             ;
-; cars:getCar|red_array[3][1]                ; cars:getCar|red_array[3][0]               ; 0.913             ;
-; cars:getCar|red_array[6][7]                ; cars:getCar|red_array[6][6]               ; 0.905             ;
-; cars:getCar|red_array[1][2]                ; cars:getCar|red_array[1][1]               ; 0.901             ;
-; cars:getCar|red_array[4][7]                ; cars:getCar|red_array[4][6]               ; 0.877             ;
-; inputUser:inputpress|handleClick:Right|out ; frog:setFrog|lights:LED26|lightOn         ; 0.864             ;
-; cars:getCar|red_array[3][3]                ; cars:getCar|red_array[3][2]               ; 0.862             ;
-; clock_divider:clkdiv|divided_clock[14]     ; clock_divider:clkdiv|divided_clock[14]    ; 0.797             ;
-; inputUser:inputpress|handleClick:Down|prev ; inputUser:inputpress|handleClick:Down|out ; 0.770             ;
-; cars:getCar|red_array[3][4]                ; cars:getCar|red_array[3][3]               ; 0.769             ;
-; cars:getCar|red_array[4][3]                ; cars:getCar|red_array[4][2]               ; 0.758             ;
-; cars:getCar|red_array[1][6]                ; cars:getCar|red_array[1][5]               ; 0.755             ;
-; clock_divider:clkdiv|divided_clock[13]     ; clock_divider:clkdiv|divided_clock[14]    ; 0.740             ;
-; frog:setFrog|bottomLight:LED4|lightOn      ; frog:setFrog|center:LED3|lightOn          ; 0.670             ;
-; frog:setFrog|lights:LED11|lightOn          ; frog:setFrog|center:LED3|lightOn          ; 0.626             ;
-; inputUser:inputpress|handleClick:Left|prev ; inputUser:inputpress|handleClick:Left|out ; 0.622             ;
-; inputUser:inputpress|handleClick:Up|out    ; frog:setFrog|lights:LED36|lightOn         ; 0.619             ;
-; frog:setFrog|lights:LED28|lightOn          ; frog:setFrog|lights:LED36|lightOn         ; 0.603             ;
-; frog:setFrog|bottomLight:LED1|lightOn      ; frog:setFrog|lights:LED9|lightOn          ; 0.593             ;
-; frog:setFrog|lights:LED18|lightOn          ; frog:setFrog|lights:LED26|lightOn         ; 0.591             ;
-; inputUser:inputpress|handleClick:Up|prev   ; inputUser:inputpress|handleClick:Up|out   ; 0.591             ;
-; cars:getCar|red_array[3][2]                ; cars:getCar|red_array[3][1]               ; 0.589             ;
-; cars:getCar|red_array[5][7]                ; cars:getCar|red_array[5][6]               ; 0.588             ;
-; cars:getCar|red_array[5][5]                ; cars:getCar|red_array[5][4]               ; 0.588             ;
-; cars:getCar|red_array[5][2]                ; cars:getCar|red_array[5][1]               ; 0.588             ;
-; cars:getCar|red_array[2][2]                ; cars:getCar|red_array[2][1]               ; 0.588             ;
-; cars:getCar|red_array[2][1]                ; cars:getCar|red_array[2][0]               ; 0.588             ;
-; cars:getCar|red_array[6][6]                ; cars:getCar|red_array[6][5]               ; 0.588             ;
-; cars:getCar|red_array[6][5]                ; cars:getCar|red_array[6][4]               ; 0.588             ;
-; cars:getCar|red_array[6][1]                ; cars:getCar|red_array[6][0]               ; 0.588             ;
-; cars:getCar|red_array[3][0]                ; cars:getCar|red_array[3][7]               ; 0.584             ;
-; cars:getCar|red_array[3][7]                ; cars:getCar|red_array[3][6]               ; 0.584             ;
-; cars:getCar|red_array[3][5]                ; cars:getCar|red_array[3][4]               ; 0.584             ;
-; cars:getCar|red_array[1][7]                ; cars:getCar|red_array[1][6]               ; 0.584             ;
-; cars:getCar|red_array[1][1]                ; cars:getCar|red_array[1][0]               ; 0.584             ;
-; frog:setFrog|lights:LED9|lightOn           ; frog:setFrog|bottomLight:LED1|lightOn     ; 0.583             ;
-; cars:getCar|red_array[5][0]                ; cars:getCar|red_array[5][7]               ; 0.581             ;
-; cars:getCar|red_array[6][4]                ; cars:getCar|red_array[6][3]               ; 0.581             ;
-; frog:setFrog|lights:LED35|lightOn          ; frog:setFrog|lights:LED43|lightOn         ; 0.580             ;
-; cars:getCar|red_array[3][6]                ; cars:getCar|red_array[3][5]               ; 0.577             ;
-; cars:getCar|red_array[1][3]                ; cars:getCar|red_array[1][2]               ; 0.577             ;
-; cars:getCar|red_array[1][0]                ; cars:getCar|red_array[1][7]               ; 0.577             ;
-; cars:getCar|red_array[4][4]                ; cars:getCar|red_array[4][3]               ; 0.577             ;
-; cars:getCar|red_array[1][5]                ; cars:getCar|red_array[1][4]               ; 0.575             ;
-; frog:setFrog|lights:LED19|lightOn          ; frog:setFrog|lights:LED27|lightOn         ; 0.566             ;
-; frog:setFrog|lights:LED64|lightOn          ; frog:setFrog|lights:LED57|lightOn         ; 0.561             ;
-; cars:getCar|red_array[4][5]                ; cars:getCar|red_array[4][4]               ; 0.551             ;
-; frog:setFrog|lights:LED49|lightOn          ; frog:setFrog|lights:LED57|lightOn         ; 0.539             ;
-; frog:setFrog|lights:LED16|lightOn          ; frog:setFrog|bottomLight:LED8|lightOn     ; 0.537             ;
-; clock_divider:clkdiv|divided_clock[10]     ; clock_divider:clkdiv|divided_clock[14]    ; 0.534             ;
-; frog:setFrog|lights:LED45|lightOn          ; frog:setFrog|lights:LED44|lightOn         ; 0.524             ;
-; frog:setFrog|lights:LED50|lightOn          ; frog:setFrog|lights:LED49|lightOn         ; 0.519             ;
-; frog:setFrog|lights:LED62|lightOn          ; frog:setFrog|lights:LED61|lightOn         ; 0.515             ;
-; frog:setFrog|lights:LED51|lightOn          ; frog:setFrog|lights:LED50|lightOn         ; 0.515             ;
-; frog:setFrog|lights:LED52|lightOn          ; frog:setFrog|lights:LED44|lightOn         ; 0.504             ;
-; clock_divider:clkdiv|divided_clock[11]     ; clock_divider:clkdiv|divided_clock[14]    ; 0.496             ;
-; frog:setFrog|lights:LED57|lightOn          ; frog:setFrog|lights:LED49|lightOn         ; 0.495             ;
-; led_matrix_driver:driver|count[0]          ; led_matrix_driver:driver|count[1]         ; 0.494             ;
-; frog:setFrog|lights:LED58|lightOn          ; frog:setFrog|lights:LED50|lightOn         ; 0.494             ;
-; clock_divider:clkdiv|divided_clock[12]     ; clock_divider:clkdiv|divided_clock[14]    ; 0.494             ;
-; frog:setFrog|lights:LED43|lightOn          ; frog:setFrog|lights:LED35|lightOn         ; 0.486             ;
-; frog:setFrog|lights:LED60|lightOn          ; frog:setFrog|lights:LED61|lightOn         ; 0.485             ;
-; led_matrix_driver:driver|count[1]          ; led_matrix_driver:driver|count[2]         ; 0.481             ;
-; clock_divider:clkdiv|divided_clock[9]      ; clock_divider:clkdiv|divided_clock[14]    ; 0.472             ;
-; cars:getCar|red_array[4][1]                ; cars:getCar|red_array[4][0]               ; 0.464             ;
-; frog:setFrog|lights:LED27|lightOn          ; frog:setFrog|lights:LED19|lightOn         ; 0.455             ;
-; frog:setFrog|lights:LED59|lightOn          ; frog:setFrog|lights:LED58|lightOn         ; 0.451             ;
-; frog:setFrog|lights:LED26|lightOn          ; frog:setFrog|lights:LED18|lightOn         ; 0.449             ;
-; frog:setFrog|bottomLight:LED5|lightOn      ; frog:setFrog|bottomLight:LED4|lightOn     ; 0.442             ;
-; frog:setFrog|bottomLight:LED2|lightOn      ; frog:setFrog|center:LED3|lightOn          ; 0.435             ;
-; frog:setFrog|lights:LED17|lightOn          ; frog:setFrog|lights:LED18|lightOn         ; 0.435             ;
-; frog:setFrog|lights:LED56|lightOn          ; frog:setFrog|lights:LED64|lightOn         ; 0.433             ;
-; frog:setFrog|lights:LED42|lightOn          ; frog:setFrog|lights:LED43|lightOn         ; 0.433             ;
-; frog:setFrog|lights:LED25|lightOn          ; frog:setFrog|lights:LED32|lightOn         ; 0.429             ;
-; frog:setFrog|lights:LED48|lightOn          ; frog:setFrog|lights:LED41|lightOn         ; 0.429             ;
-; frog:setFrog|lights:LED41|lightOn          ; frog:setFrog|lights:LED49|lightOn         ; 0.428             ;
-; frog:setFrog|bottomLight:LED8|lightOn      ; frog:setFrog|bottomLight:LED7|lightOn     ; 0.426             ;
-; clock_divider:clkdiv|divided_clock[8]      ; clock_divider:clkdiv|divided_clock[14]    ; 0.423             ;
-; cars:getCar|red_array[4][2]                ; cars:getCar|red_array[4][1]               ; 0.416             ;
-; frog:setFrog|lights:LED23|lightOn          ; frog:setFrog|lights:LED15|lightOn         ; 0.415             ;
-; frog:setFrog|center:LED3|lightOn           ; frog:setFrog|lights:LED11|lightOn         ; 0.406             ;
-; frog:setFrog|lights:LED40|lightOn          ; frog:setFrog|lights:LED32|lightOn         ; 0.405             ;
-; frog:setFrog|lights:LED53|lightOn          ; frog:setFrog|lights:LED45|lightOn         ; 0.402             ;
-; frog:setFrog|lights:LED38|lightOn          ; frog:setFrog|lights:LED30|lightOn         ; 0.402             ;
-; frog:setFrog|lights:LED36|lightOn          ; frog:setFrog|lights:LED28|lightOn         ; 0.393             ;
-; frog:setFrog|lights:LED29|lightOn          ; frog:setFrog|lights:LED21|lightOn         ; 0.393             ;
-; frog:setFrog|lights:LED15|lightOn          ; frog:setFrog|bottomLight:LED7|lightOn     ; 0.392             ;
-+--------------------------------------------+-------------------------------------------+-------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                ;
++---------------------------------------------+--------------------------------------------+-------------------+
+; Source Register                             ; Destination Register                       ; Delay Added in ns ;
++---------------------------------------------+--------------------------------------------+-------------------+
+; clock_divider:clkdiv|divided_clock[15]      ; clock_divider:clkdiv|divided_clock[15]     ; 5.327             ;
+; inputUser:inputpress|handleClick:Right|prev ; inputUser:inputpress|handleClick:Right|out ; 0.994             ;
+; cars:getCar|red_array[4][6]                 ; cars:getCar|red_array[4][5]                ; 0.951             ;
+; cars:getCar|red_array[6][0]                 ; cars:getCar|red_array[6][7]                ; 0.940             ;
+; cars:getCar|red_array[4][7]                 ; cars:getCar|red_array[4][6]                ; 0.940             ;
+; cars:getCar|red_array[6][7]                 ; cars:getCar|red_array[6][6]                ; 0.935             ;
+; cars:getCar|red_array[2][3]                 ; cars:getCar|red_array[2][2]                ; 0.929             ;
+; cars:getCar|red_array[4][0]                 ; cars:getCar|red_array[4][7]                ; 0.927             ;
+; cars:getCar|red_array[5][1]                 ; cars:getCar|red_array[5][0]                ; 0.924             ;
+; cars:getCar|red_array[3][1]                 ; cars:getCar|red_array[3][0]                ; 0.920             ;
+; cars:getCar|red_array[5][4]                 ; cars:getCar|red_array[5][3]                ; 0.920             ;
+; inputUser:inputpress|handleClick:Down|prev  ; inputUser:inputpress|handleClick:Down|out  ; 0.917             ;
+; cars:getCar|red_array[3][4]                 ; cars:getCar|red_array[3][3]                ; 0.913             ;
+; cars:getCar|red_array[2][0]                 ; cars:getCar|red_array[2][3]                ; 0.913             ;
+; cars:getCar|red_array[5][3]                 ; cars:getCar|red_array[5][2]                ; 0.911             ;
+; cars:getCar|red_array[4][3]                 ; cars:getCar|red_array[4][2]                ; 0.911             ;
+; inputUser:inputpress|handleClick:Left|prev  ; inputUser:inputpress|handleClick:Left|out  ; 0.908             ;
+; cars:getCar|red_array[3][3]                 ; cars:getCar|red_array[3][2]                ; 0.892             ;
+; cars:getCar|red_array[5][6]                 ; cars:getCar|red_array[5][5]                ; 0.892             ;
+; cars:getCar|red_array[1][2]                 ; cars:getCar|red_array[1][1]                ; 0.885             ;
+; clock_divider:clkdiv|divided_clock[14]      ; clock_divider:clkdiv|divided_clock[14]     ; 0.778             ;
+; clock_divider:clkdiv|divided_clock[13]      ; clock_divider:clkdiv|divided_clock[14]     ; 0.724             ;
+; cars:getCar|red_array[6][2]                 ; cars:getCar|red_array[6][1]                ; 0.639             ;
+; cars:getCar|red_array[5][0]                 ; cars:getCar|red_array[5][7]                ; 0.607             ;
+; cars:getCar|red_array[5][7]                 ; cars:getCar|red_array[5][6]                ; 0.607             ;
+; cars:getCar|red_array[6][6]                 ; cars:getCar|red_array[6][5]                ; 0.607             ;
+; cars:getCar|red_array[6][5]                 ; cars:getCar|red_array[6][4]                ; 0.601             ;
+; cars:getCar|red_array[2][2]                 ; cars:getCar|red_array[2][1]                ; 0.596             ;
+; cars:getCar|red_array[3][6]                 ; cars:getCar|red_array[3][5]                ; 0.594             ;
+; cars:getCar|red_array[1][7]                 ; cars:getCar|red_array[1][6]                ; 0.594             ;
+; cars:getCar|red_array[1][0]                 ; cars:getCar|red_array[1][7]                ; 0.594             ;
+; cars:getCar|red_array[4][2]                 ; cars:getCar|red_array[4][1]                ; 0.592             ;
+; cars:getCar|red_array[3][7]                 ; cars:getCar|red_array[3][6]                ; 0.589             ;
+; cars:getCar|red_array[1][3]                 ; cars:getCar|red_array[1][2]                ; 0.589             ;
+; cars:getCar|red_array[4][4]                 ; cars:getCar|red_array[4][3]                ; 0.588             ;
+; cars:getCar|red_array[4][1]                 ; cars:getCar|red_array[4][0]                ; 0.587             ;
+; led_matrix_driver:driver|count[0]           ; led_matrix_driver:driver|count[2]          ; 0.586             ;
+; cars:getCar|red_array[5][2]                 ; cars:getCar|red_array[5][1]                ; 0.584             ;
+; cars:getCar|red_array[3][5]                 ; cars:getCar|red_array[3][4]                ; 0.583             ;
+; cars:getCar|red_array[5][5]                 ; cars:getCar|red_array[5][4]                ; 0.583             ;
+; cars:getCar|red_array[6][4]                 ; cars:getCar|red_array[6][3]                ; 0.581             ;
+; cars:getCar|red_array[3][2]                 ; cars:getCar|red_array[3][1]                ; 0.581             ;
+; cars:getCar|red_array[1][4]                 ; cars:getCar|red_array[1][3]                ; 0.554             ;
+; clock_divider:clkdiv|divided_clock[10]      ; clock_divider:clkdiv|divided_clock[14]     ; 0.534             ;
+; led_matrix_driver:driver|count[1]           ; led_matrix_driver:driver|count[2]          ; 0.530             ;
+; frog:setFrog|lights:LED63|lightOn           ; frog:setFrog|lights:LED62|lightOn          ; 0.496             ;
+; clock_divider:clkdiv|divided_clock[9]       ; clock_divider:clkdiv|divided_clock[14]     ; 0.488             ;
+; clock_divider:clkdiv|divided_clock[11]      ; clock_divider:clkdiv|divided_clock[14]     ; 0.481             ;
+; clock_divider:clkdiv|divided_clock[12]      ; clock_divider:clkdiv|divided_clock[14]     ; 0.477             ;
+; frog:setFrog|lights:LED62|lightOn           ; frog:setFrog|lights:LED63|lightOn          ; 0.464             ;
+; frog:setFrog|bottomLight:LED6|lightOn       ; frog:setFrog|bottomLight:LED5|lightOn      ; 0.463             ;
+; frog:setFrog|bottomLight:LED5|lightOn       ; frog:setFrog|bottomLight:LED6|lightOn      ; 0.451             ;
+; cars:getCar|red_array[3][0]                 ; cars:getCar|red_array[3][7]                ; 0.450             ;
+; cars:getCar|red_array[1][1]                 ; cars:getCar|red_array[1][0]                ; 0.450             ;
+; cars:getCar|red_array[2][1]                 ; cars:getCar|red_array[2][0]                ; 0.450             ;
+; frog:setFrog|lights:LED38|lightOn           ; frog:setFrog|lights:LED37|lightOn          ; 0.446             ;
+; frog:setFrog|lights:LED35|lightOn           ; frog:setFrog|lights:LED27|lightOn          ; 0.437             ;
+; frog:setFrog|bottomLight:LED4|lightOn       ; frog:setFrog|bottomLight:LED5|lightOn      ; 0.435             ;
+; frog:setFrog|center:LED3|lightOn            ; frog:setFrog|bottomLight:LED4|lightOn      ; 0.434             ;
+; cars:getCar|red_array[6][1]                 ; cars:getCar|red_array[6][0]                ; 0.427             ;
+; frog:setFrog|lights:LED22|lightOn           ; frog:setFrog|lights:LED14|lightOn          ; 0.425             ;
+; inputUser:inputpress|handleClick:Down|out   ; frog:setFrog|lights:LED21|lightOn          ; 0.424             ;
+; clock_divider:clkdiv|divided_clock[8]       ; clock_divider:clkdiv|divided_clock[14]     ; 0.423             ;
+; frog:setFrog|lights:LED43|lightOn           ; frog:setFrog|lights:LED35|lightOn          ; 0.422             ;
+; frog:setFrog|lights:LED60|lightOn           ; frog:setFrog|lights:LED59|lightOn          ; 0.422             ;
+; frog:setFrog|lights:LED14|lightOn           ; frog:setFrog|bottomLight:LED6|lightOn      ; 0.421             ;
+; frog:setFrog|lights:LED51|lightOn           ; frog:setFrog|lights:LED43|lightOn          ; 0.417             ;
+; frog:setFrog|lights:LED11|lightOn           ; frog:setFrog|center:LED3|lightOn           ; 0.416             ;
+; frog:setFrog|lights:LED61|lightOn           ; frog:setFrog|lights:LED60|lightOn          ; 0.413             ;
+; inputUser:inputpress|handleClick:Up|prev    ; inputUser:inputpress|handleClick:Up|out    ; 0.413             ;
+; frog:setFrog|lights:LED57|lightOn           ; frog:setFrog|lights:LED64|lightOn          ; 0.412             ;
+; frog:setFrog|lights:LED16|lightOn           ; frog:setFrog|bottomLight:LED8|lightOn      ; 0.411             ;
+; frog:setFrog|bottomLight:LED2|lightOn       ; frog:setFrog|center:LED3|lightOn           ; 0.410             ;
+; led_matrix_driver:driver|count[2]           ; led_matrix_driver:driver|count[2]          ; 0.409             ;
+; frog:setFrog|lights:LED13|lightOn           ; frog:setFrog|bottomLight:LED5|lightOn      ; 0.407             ;
+; frog:setFrog|lights:LED59|lightOn           ; frog:setFrog|lights:LED58|lightOn          ; 0.405             ;
+; frog:setFrog|lights:LED64|lightOn           ; frog:setFrog|lights:LED57|lightOn          ; 0.403             ;
+; frog:setFrog|lights:LED58|lightOn           ; frog:setFrog|lights:LED59|lightOn          ; 0.400             ;
+; frog:setFrog|lights:LED53|lightOn           ; frog:setFrog|lights:LED45|lightOn          ; 0.390             ;
+; frog:setFrog|lights:LED27|lightOn           ; frog:setFrog|lights:LED19|lightOn          ; 0.389             ;
+; cars:getCar|red_array[4][5]                 ; cars:getCar|red_array[4][4]                ; 0.388             ;
+; frog:setFrog|lights:LED18|lightOn           ; frog:setFrog|lights:LED10|lightOn          ; 0.387             ;
+; frog:setFrog|lights:LED42|lightOn           ; frog:setFrog|lights:LED34|lightOn          ; 0.386             ;
+; cars:getCar|red_array[1][5]                 ; cars:getCar|red_array[1][4]                ; 0.386             ;
+; frog:setFrog|lights:LED24|lightOn           ; frog:setFrog|lights:LED16|lightOn          ; 0.383             ;
+; frog:setFrog|lights:LED50|lightOn           ; frog:setFrog|lights:LED42|lightOn          ; 0.379             ;
+; frog:setFrog|lights:LED54|lightOn           ; frog:setFrog|lights:LED46|lightOn          ; 0.375             ;
+; frog:setFrog|lights:LED23|lightOn           ; frog:setFrog|lights:LED15|lightOn          ; 0.374             ;
+; frog:setFrog|lights:LED48|lightOn           ; frog:setFrog|lights:LED40|lightOn          ; 0.373             ;
+; frog:setFrog|lights:LED17|lightOn           ; frog:setFrog|lights:LED9|lightOn           ; 0.373             ;
+; frog:setFrog|lights:LED10|lightOn           ; frog:setFrog|bottomLight:LED2|lightOn      ; 0.373             ;
+; frog:setFrog|lights:LED28|lightOn           ; frog:setFrog|lights:LED20|lightOn          ; 0.370             ;
+; frog:setFrog|lights:LED34|lightOn           ; frog:setFrog|lights:LED26|lightOn          ; 0.370             ;
+; frog:setFrog|lights:LED46|lightOn           ; frog:setFrog|lights:LED45|lightOn          ; 0.362             ;
+; frog:setFrog|lights:LED31|lightOn           ; frog:setFrog|lights:LED23|lightOn          ; 0.362             ;
+; frog:setFrog|lights:LED49|lightOn           ; frog:setFrog|lights:LED56|lightOn          ; 0.361             ;
+; frog:setFrog|lights:LED41|lightOn           ; frog:setFrog|lights:LED33|lightOn          ; 0.361             ;
+; inputUser:inputpress|handleClick:Up|out     ; frog:setFrog|bottomLight:LED5|lightOn      ; 0.359             ;
+; frog:setFrog|lights:LED39|lightOn           ; frog:setFrog|lights:LED31|lightOn          ; 0.357             ;
+; frog:setFrog|lights:LED36|lightOn           ; frog:setFrog|lights:LED28|lightOn          ; 0.356             ;
++---------------------------------------------+--------------------------------------------+-------------------+
 Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (119006): Selected device 5CSEMA5F31C6 for design "DE1_SoC"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -2650,36 +2663,36 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQue
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:13
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:17
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:08
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 3% of the available device resources in the region that extends from location X45_Y0 to location X55_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:05
-Info (11888): Total time spent on timing analysis during the Fitter is 0.76 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
+Info (11888): Total time spent on timing analysis during the Fitter is 1.17 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
-Info (144001): Generated suppressed messages file C:/lab8/output_files/DE1_SoC.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (144001): Generated suppressed messages file C:/Users/Son Tran/Desktop/lab8/output_files/DE1_SoC.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 2512 megabytes
-    Info: Processing ended: Sun Mar 04 00:28:14 2018
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:01:20
+    Info: Peak virtual memory: 2211 megabytes
+    Info: Processing ended: Sun Mar 04 14:27:22 2018
+    Info: Elapsed time: 00:01:11
+    Info: Total CPU time (on all processors): 00:01:54
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/lab8/output_files/DE1_SoC.fit.smsg.
+The suppressed messages can be found in C:/Users/Son Tran/Desktop/lab8/output_files/DE1_SoC.fit.smsg.
 
 
