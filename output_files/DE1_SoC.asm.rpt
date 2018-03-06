@@ -1,5 +1,5 @@
 Assembler report for DE1_SoC
-Sun Mar 04 14:27:33 2018
+Mon Mar 05 18:22:50 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Son Tran/Desktop/lab8/output_files/DE1_SoC.sof
+  5. Assembler Device Options: C:/lab8/output_files/DE1_SoC.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Mar 04 14:27:33 2018 ;
+; Assembler Status      ; Successful - Mon Mar 05 18:22:50 2018 ;
 ; Revision Name         ; DE1_SoC                               ;
 ; Top-level Entity Name ; DE1_SoC                               ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ agreement for further details.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------+
-; Assembler Generated Files                               ;
-+---------------------------------------------------------+
-; File Name                                               ;
-+---------------------------------------------------------+
-; C:/Users/Son Tran/Desktop/lab8/output_files/DE1_SoC.sof ;
-+---------------------------------------------------------+
++----------------------------------+
+; Assembler Generated Files        ;
++----------------------------------+
+; File Name                        ;
++----------------------------------+
+; C:/lab8/output_files/DE1_SoC.sof ;
++----------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Son Tran/Desktop/lab8/output_files/DE1_SoC.sof ;
-+----------------+------------------------------------------------------------------+
-; Option         ; Setting                                                          ;
-+----------------+------------------------------------------------------------------+
-; JTAG usercode  ; 0x00B6444B                                                       ;
-; Checksum       ; 0x00B6444B                                                       ;
-+----------------+------------------------------------------------------------------+
++------------------------------------------------------------+
+; Assembler Device Options: C:/lab8/output_files/DE1_SoC.sof ;
++----------------+-------------------------------------------+
+; Option         ; Setting                                   ;
++----------------+-------------------------------------------+
+; JTAG usercode  ; 0x00B9A225                                ;
+; Checksum       ; 0x00B9A225                                ;
++----------------+-------------------------------------------+
 
 
 +--------------------+
@@ -78,13 +78,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Mar 04 14:27:23 2018
+    Info: Processing started: Mon Mar 05 18:22:43 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 755 megabytes
-    Info: Processing ended: Sun Mar 04 14:27:33 2018
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 724 megabytes
+    Info: Processing ended: Mon Mar 05 18:22:50 2018
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 

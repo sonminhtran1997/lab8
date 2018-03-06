@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Sun Mar 04 14:26:10 2018
+Mon Mar 05 18:22:00 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -123,13 +123,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar 04 14:26:10 2018       ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 05 18:22:00 2018       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; DE1_SoC                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 136                                         ;
+; Total registers                 ; 128                                         ;
 ; Total pins                      ; 51                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -235,61 +235,61 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                            ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
-; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv           ;         ;
-; inputUser.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Son Tran/Desktop/lab8/inputUser.sv         ;         ;
-; lights.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Son Tran/Desktop/lab8/lights.sv            ;         ;
-; frog.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Son Tran/Desktop/lab8/frog.sv              ;         ;
-; center.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Son Tran/Desktop/lab8/center.sv            ;         ;
-; bottomLight.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Son Tran/Desktop/lab8/bottomLight.sv       ;         ;
-; led_matrix_driver.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Son Tran/Desktop/lab8/led_matrix_driver.sv ;         ;
-; cars.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Son Tran/Desktop/lab8/cars.sv              ;         ;
-; LSFR.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Son Tran/Desktop/lab8/LSFR.sv              ;         ;
-; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Son Tran/Desktop/lab8/adder.sv             ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                     ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/lab8/DE1_SoC.sv           ;         ;
+; inputUser.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/lab8/inputUser.sv         ;         ;
+; lights.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/lab8/lights.sv            ;         ;
+; frog.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/lab8/frog.sv              ;         ;
+; center.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/lab8/center.sv            ;         ;
+; bottomLight.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/lab8/bottomLight.sv       ;         ;
+; led_matrix_driver.sv             ; yes             ; User SystemVerilog HDL File  ; C:/lab8/led_matrix_driver.sv ;         ;
+; cars.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/lab8/cars.sv              ;         ;
+; LSFR.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/lab8/LSFR.sv              ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/lab8/adder.sv             ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                          ;
-+---------------------------------------------+----------------------------------------+
-; Resource                                    ; Usage                                  ;
-+---------------------------------------------+----------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 193                                    ;
-;                                             ;                                        ;
-; Combinational ALUT usage for logic          ; 294                                    ;
-;     -- 7 input functions                    ; 0                                      ;
-;     -- 6 input functions                    ; 88                                     ;
-;     -- 5 input functions                    ; 8                                      ;
-;     -- 4 input functions                    ; 114                                    ;
-;     -- <=3 input functions                  ; 84                                     ;
-;                                             ;                                        ;
-; Dedicated logic registers                   ; 136                                    ;
-;                                             ;                                        ;
-; I/O pins                                    ; 51                                     ;
-;                                             ;                                        ;
-; Total DSP Blocks                            ; 0                                      ;
-;                                             ;                                        ;
-; Maximum fan-out node                        ; clock_divider:clkdiv|divided_clock[15] ;
-; Maximum fan-out                             ; 121                                    ;
-; Total fan-out                               ; 1695                                   ;
-; Average fan-out                             ; 3.19                                   ;
-+---------------------------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                             ;
++---------------------------------------------+-------------------------------------------+
+; Resource                                    ; Usage                                     ;
++---------------------------------------------+-------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 283                                       ;
+;                                             ;                                           ;
+; Combinational ALUT usage for logic          ; 451                                       ;
+;     -- 7 input functions                    ; 0                                         ;
+;     -- 6 input functions                    ; 111                                       ;
+;     -- 5 input functions                    ; 59                                        ;
+;     -- 4 input functions                    ; 109                                       ;
+;     -- <=3 input functions                  ; 172                                       ;
+;                                             ;                                           ;
+; Dedicated logic registers                   ; 128                                       ;
+;                                             ;                                           ;
+; I/O pins                                    ; 51                                        ;
+;                                             ;                                           ;
+; Total DSP Blocks                            ; 0                                         ;
+;                                             ;                                           ;
+; Maximum fan-out node                        ; inputUser:inputpress|handleClick:Left|out ;
+; Maximum fan-out                             ; 183                                       ;
+; Total fan-out                               ; 2249                                      ;
+; Average fan-out                             ; 3.30                                      ;
++---------------------------------------------+-------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -297,82 +297,82 @@ agreement for further details.
 +-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name       ; Library Name ;
 +-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------+-------------------+--------------+
-; |DE1_SoC                      ; 294 (1)             ; 136 (0)                   ; 0                 ; 0          ; 51   ; 0            ; |DE1_SoC                                        ; DE1_SoC           ; work         ;
-;    |LSFR:randomize|           ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|LSFR:randomize                         ; LSFR              ; work         ;
+; |DE1_SoC                      ; 451 (5)             ; 128 (0)                   ; 0                 ; 0          ; 51   ; 0            ; |DE1_SoC                                        ; DE1_SoC           ; work         ;
+;    |LSFR:randomize|           ; 1 (1)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|LSFR:randomize                         ; LSFR              ; work         ;
 ;    |adder:add|                ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|adder:add                              ; adder             ; work         ;
-;    |cars:getCar|              ; 21 (21)             ; 44 (44)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|cars:getCar                            ; cars              ; work         ;
+;    |cars:getCar|              ; 9 (9)               ; 28 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|cars:getCar                            ; cars              ; work         ;
 ;    |clock_divider:clkdiv|     ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider:clkdiv                   ; clock_divider     ; work         ;
-;    |frog:setFrog|             ; 180 (0)             ; 64 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog                           ; frog              ; work         ;
-;       |bottomLight:LED1|      ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED1          ; bottomLight       ; work         ;
-;       |bottomLight:LED2|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED2          ; bottomLight       ; work         ;
-;       |bottomLight:LED4|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED4          ; bottomLight       ; work         ;
-;       |bottomLight:LED5|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED5          ; bottomLight       ; work         ;
-;       |bottomLight:LED6|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED6          ; bottomLight       ; work         ;
-;       |bottomLight:LED7|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED7          ; bottomLight       ; work         ;
-;       |bottomLight:LED8|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED8          ; bottomLight       ; work         ;
-;       |center:LED3|           ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|center:LED3               ; center            ; work         ;
-;       |lights:LED10|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED10              ; lights            ; work         ;
+;    |frog:setFrog|             ; 355 (0)             ; 64 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog                           ; frog              ; work         ;
+;       |bottomLight:LED1|      ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED1          ; bottomLight       ; work         ;
+;       |bottomLight:LED2|      ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED2          ; bottomLight       ; work         ;
+;       |bottomLight:LED4|      ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED4          ; bottomLight       ; work         ;
+;       |bottomLight:LED5|      ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED5          ; bottomLight       ; work         ;
+;       |bottomLight:LED6|      ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED6          ; bottomLight       ; work         ;
+;       |bottomLight:LED7|      ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED7          ; bottomLight       ; work         ;
+;       |bottomLight:LED8|      ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|bottomLight:LED8          ; bottomLight       ; work         ;
+;       |center:LED3|           ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|center:LED3               ; center            ; work         ;
+;       |lights:LED10|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED10              ; lights            ; work         ;
 ;       |lights:LED11|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED11              ; lights            ; work         ;
-;       |lights:LED12|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED12              ; lights            ; work         ;
-;       |lights:LED13|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED13              ; lights            ; work         ;
-;       |lights:LED14|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED14              ; lights            ; work         ;
+;       |lights:LED12|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED12              ; lights            ; work         ;
+;       |lights:LED13|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED13              ; lights            ; work         ;
+;       |lights:LED14|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED14              ; lights            ; work         ;
 ;       |lights:LED15|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED15              ; lights            ; work         ;
-;       |lights:LED16|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED16              ; lights            ; work         ;
+;       |lights:LED16|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED16              ; lights            ; work         ;
 ;       |lights:LED17|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED17              ; lights            ; work         ;
-;       |lights:LED18|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED18              ; lights            ; work         ;
-;       |lights:LED19|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED19              ; lights            ; work         ;
+;       |lights:LED18|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED18              ; lights            ; work         ;
+;       |lights:LED19|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED19              ; lights            ; work         ;
 ;       |lights:LED20|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED20              ; lights            ; work         ;
-;       |lights:LED21|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED21              ; lights            ; work         ;
-;       |lights:LED22|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED22              ; lights            ; work         ;
-;       |lights:LED23|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED23              ; lights            ; work         ;
-;       |lights:LED24|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED24              ; lights            ; work         ;
+;       |lights:LED21|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED21              ; lights            ; work         ;
+;       |lights:LED22|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED22              ; lights            ; work         ;
+;       |lights:LED23|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED23              ; lights            ; work         ;
+;       |lights:LED24|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED24              ; lights            ; work         ;
 ;       |lights:LED25|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED25              ; lights            ; work         ;
 ;       |lights:LED26|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED26              ; lights            ; work         ;
-;       |lights:LED27|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED27              ; lights            ; work         ;
-;       |lights:LED28|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED28              ; lights            ; work         ;
+;       |lights:LED27|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED27              ; lights            ; work         ;
+;       |lights:LED28|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED28              ; lights            ; work         ;
 ;       |lights:LED29|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED29              ; lights            ; work         ;
-;       |lights:LED30|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED30              ; lights            ; work         ;
-;       |lights:LED31|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED31              ; lights            ; work         ;
-;       |lights:LED32|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED32              ; lights            ; work         ;
-;       |lights:LED33|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED33              ; lights            ; work         ;
-;       |lights:LED34|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED34              ; lights            ; work         ;
+;       |lights:LED30|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED30              ; lights            ; work         ;
+;       |lights:LED31|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED31              ; lights            ; work         ;
+;       |lights:LED32|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED32              ; lights            ; work         ;
+;       |lights:LED33|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED33              ; lights            ; work         ;
+;       |lights:LED34|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED34              ; lights            ; work         ;
 ;       |lights:LED35|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED35              ; lights            ; work         ;
-;       |lights:LED36|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED36              ; lights            ; work         ;
-;       |lights:LED37|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED37              ; lights            ; work         ;
-;       |lights:LED38|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED38              ; lights            ; work         ;
-;       |lights:LED39|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED39              ; lights            ; work         ;
-;       |lights:LED40|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED40              ; lights            ; work         ;
-;       |lights:LED41|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED41              ; lights            ; work         ;
-;       |lights:LED42|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED42              ; lights            ; work         ;
-;       |lights:LED43|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED43              ; lights            ; work         ;
+;       |lights:LED36|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED36              ; lights            ; work         ;
+;       |lights:LED37|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED37              ; lights            ; work         ;
+;       |lights:LED38|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED38              ; lights            ; work         ;
+;       |lights:LED39|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED39              ; lights            ; work         ;
+;       |lights:LED40|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED40              ; lights            ; work         ;
+;       |lights:LED41|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED41              ; lights            ; work         ;
+;       |lights:LED42|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED42              ; lights            ; work         ;
+;       |lights:LED43|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED43              ; lights            ; work         ;
 ;       |lights:LED44|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED44              ; lights            ; work         ;
-;       |lights:LED45|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED45              ; lights            ; work         ;
+;       |lights:LED45|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED45              ; lights            ; work         ;
 ;       |lights:LED46|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED46              ; lights            ; work         ;
-;       |lights:LED47|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED47              ; lights            ; work         ;
-;       |lights:LED48|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED48              ; lights            ; work         ;
+;       |lights:LED47|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED47              ; lights            ; work         ;
+;       |lights:LED48|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED48              ; lights            ; work         ;
 ;       |lights:LED49|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED49              ; lights            ; work         ;
-;       |lights:LED50|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED50              ; lights            ; work         ;
-;       |lights:LED51|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED51              ; lights            ; work         ;
+;       |lights:LED50|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED50              ; lights            ; work         ;
+;       |lights:LED51|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED51              ; lights            ; work         ;
 ;       |lights:LED52|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED52              ; lights            ; work         ;
-;       |lights:LED53|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED53              ; lights            ; work         ;
-;       |lights:LED54|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED54              ; lights            ; work         ;
-;       |lights:LED55|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED55              ; lights            ; work         ;
-;       |lights:LED56|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED56              ; lights            ; work         ;
-;       |lights:LED57|          ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED57              ; lights            ; work         ;
-;       |lights:LED58|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED58              ; lights            ; work         ;
-;       |lights:LED59|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED59              ; lights            ; work         ;
-;       |lights:LED60|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED60              ; lights            ; work         ;
-;       |lights:LED61|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED61              ; lights            ; work         ;
-;       |lights:LED62|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED62              ; lights            ; work         ;
-;       |lights:LED63|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED63              ; lights            ; work         ;
-;       |lights:LED64|          ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED64              ; lights            ; work         ;
-;       |lights:LED9|           ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED9               ; lights            ; work         ;
-;    |inputUser:inputpress|     ; 8 (0)               ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress                   ; inputUser         ; work         ;
-;       |handleClick:Down|      ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Down  ; handleClick       ; work         ;
-;       |handleClick:Left|      ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Left  ; handleClick       ; work         ;
-;       |handleClick:Right|     ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Right ; handleClick       ; work         ;
-;       |handleClick:Up|        ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Up    ; handleClick       ; work         ;
-;    |led_matrix_driver:driver| ; 57 (57)             ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|led_matrix_driver:driver               ; led_matrix_driver ; work         ;
+;       |lights:LED53|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED53              ; lights            ; work         ;
+;       |lights:LED54|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED54              ; lights            ; work         ;
+;       |lights:LED55|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED55              ; lights            ; work         ;
+;       |lights:LED56|          ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED56              ; lights            ; work         ;
+;       |lights:LED57|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED57              ; lights            ; work         ;
+;       |lights:LED58|          ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED58              ; lights            ; work         ;
+;       |lights:LED59|          ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED59              ; lights            ; work         ;
+;       |lights:LED60|          ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED60              ; lights            ; work         ;
+;       |lights:LED61|          ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED61              ; lights            ; work         ;
+;       |lights:LED62|          ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED62              ; lights            ; work         ;
+;       |lights:LED63|          ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED63              ; lights            ; work         ;
+;       |lights:LED64|          ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED64              ; lights            ; work         ;
+;       |lights:LED9|           ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|frog:setFrog|lights:LED9               ; lights            ; work         ;
+;    |inputUser:inputpress|     ; 4 (0)               ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress                   ; inputUser         ; work         ;
+;       |handleClick:Down|      ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Down  ; handleClick       ; work         ;
+;       |handleClick:Left|      ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Left  ; handleClick       ; work         ;
+;       |handleClick:Right|     ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Right ; handleClick       ; work         ;
+;       |handleClick:Up|        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|inputUser:inputpress|handleClick:Up    ; handleClick       ; work         ;
+;    |led_matrix_driver:driver| ; 51 (51)             ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|led_matrix_driver:driver               ; led_matrix_driver ; work         ;
 +-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -382,7 +382,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+-----------------------------------------+
 ; Register name                              ; Reason for Removal                      ;
 +--------------------------------------------+-----------------------------------------+
-; LSFR:randomize|random[1..8]                ; Stuck at GND due to stuck port data_in  ;
 ; cars:getCar|red_array[0][1]                ; Merged with cars:getCar|red_array[0][0] ;
 ; cars:getCar|red_array[0][2]                ; Merged with cars:getCar|red_array[0][0] ;
 ; cars:getCar|red_array[0][3]                ; Merged with cars:getCar|red_array[0][0] ;
@@ -398,13 +397,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; cars:getCar|red_array[7][5]                ; Merged with cars:getCar|red_array[0][0] ;
 ; cars:getCar|red_array[7][6]                ; Merged with cars:getCar|red_array[0][0] ;
 ; cars:getCar|red_array[7][7]                ; Merged with cars:getCar|red_array[0][0] ;
-; cars:getCar|red_array[2][4]                ; Merged with cars:getCar|red_array[2][0] ;
-; cars:getCar|red_array[2][5]                ; Merged with cars:getCar|red_array[2][1] ;
-; cars:getCar|red_array[2][6]                ; Merged with cars:getCar|red_array[2][2] ;
-; cars:getCar|red_array[2][7]                ; Merged with cars:getCar|red_array[2][3] ;
+; cars:getCar|red_array[6][0]                ; Merged with cars:getCar|red_array[2][0] ;
+; cars:getCar|red_array[5][0]                ; Merged with cars:getCar|red_array[4][5] ;
+; cars:getCar|red_array[5][3]                ; Merged with cars:getCar|red_array[4][0] ;
+; cars:getCar|red_array[1][4]                ; Merged with cars:getCar|red_array[1][0] ;
+; cars:getCar|red_array[5][1]                ; Merged with cars:getCar|red_array[4][6] ;
+; cars:getCar|red_array[5][4]                ; Merged with cars:getCar|red_array[4][1] ;
+; cars:getCar|red_array[1][5]                ; Merged with cars:getCar|red_array[1][1] ;
+; cars:getCar|red_array[6][2]                ; Merged with cars:getCar|red_array[2][2] ;
+; cars:getCar|red_array[5][2]                ; Merged with cars:getCar|red_array[4][7] ;
+; cars:getCar|red_array[5][5]                ; Merged with cars:getCar|red_array[4][2] ;
+; cars:getCar|red_array[1][6]                ; Merged with cars:getCar|red_array[1][2] ;
+; cars:getCar|red_array[6][3]                ; Merged with cars:getCar|red_array[2][3] ;
+; cars:getCar|red_array[5][7]                ; Merged with cars:getCar|red_array[4][4] ;
+; cars:getCar|red_array[6][5]                ; Merged with cars:getCar|red_array[2][5] ;
+; cars:getCar|red_array[6][6]                ; Merged with cars:getCar|red_array[2][6] ;
+; cars:getCar|red_array[6][1]                ; Merged with cars:getCar|red_array[2][1] ;
+; cars:getCar|red_array[5][6]                ; Merged with cars:getCar|red_array[4][3] ;
+; cars:getCar|red_array[6][4]                ; Merged with cars:getCar|red_array[2][4] ;
+; cars:getCar|red_array[6][7]                ; Merged with cars:getCar|red_array[2][7] ;
+; cars:getCar|red_array[1][7]                ; Merged with cars:getCar|red_array[1][3] ;
 ; cars:getCar|red_array[0][0]                ; Stuck at GND due to stuck port data_in  ;
 ; clock_divider:clkdiv|divided_clock[16..31] ; Lost fanout                             ;
-; Total Number of Removed Registers = 44     ;                                         ;
+; Total Number of Removed Registers = 52     ;                                         ;
 +--------------------------------------------+-----------------------------------------+
 
 
@@ -413,12 +428,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 136   ;
-; Number of registers using Synchronous Clear  ; 91    ;
+; Total registers                              ; 128   ;
+; Number of registers using Synchronous Clear  ; 52    ;
 ; Number of registers using Synchronous Load   ; 5     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 44    ;
+; Number of registers using Clock Enable       ; 28    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -428,10 +443,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |DE1_SoC|cars:getCar|red_array[3][2]   ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |DE1_SoC|cars:getCar|red_array[2][0]   ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |DE1_SoC|led_matrix_driver:driver|Mux9 ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |DE1_SoC|led_matrix_driver:driver|Mux2 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DE1_SoC|cars:getCar|red_array[3][7]   ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |DE1_SoC|cars:getCar|red_array[1][0]   ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |DE1_SoC|led_matrix_driver:driver|Mux8 ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |DE1_SoC|led_matrix_driver:driver|Mux0 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
@@ -1270,30 +1285,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 136                         ;
-;     ENA               ; 20                          ;
-;     ENA SCLR          ; 24                          ;
-;     SCLR              ; 63                          ;
+; arriav_ff             ; 128                         ;
+;     ENA               ; 8                           ;
+;     ENA SCLR          ; 20                          ;
+;     SCLR              ; 28                          ;
 ;     SCLR SLD          ; 4                           ;
 ;     SLD               ; 1                           ;
-;     plain             ; 24                          ;
-; arriav_lcell_comb     ; 302                         ;
+;     plain             ; 67                          ;
+; arriav_lcell_comb     ; 459                         ;
 ;     arith             ; 25                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 22                          ;
-;         2 data inputs ; 2                           ;
-;     normal            ; 277                         ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 10                          ;
+;     normal            ; 434                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 11                          ;
-;         2 data inputs ; 37                          ;
-;         3 data inputs ; 18                          ;
-;         4 data inputs ; 114                         ;
-;         5 data inputs ; 8                           ;
-;         6 data inputs ; 88                          ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 51                          ;
+;         3 data inputs ; 89                          ;
+;         4 data inputs ; 109                         ;
+;         5 data inputs ; 59                          ;
+;         6 data inputs ; 111                         ;
 ; boundary_port         ; 51                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.90                        ;
-; Average LUT depth     ; 1.89                        ;
+; Average LUT depth     ; 1.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1312,67 +1327,66 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Mar 04 14:25:51 2018
+    Info: Processing started: Mon Mar 05 18:21:49 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file de1_soc.sv
-    Info (12023): Found entity 1: DE1_SoC File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 1
-    Info (12023): Found entity 2: clock_divider File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 24
+    Info (12023): Found entity 1: DE1_SoC File: C:/lab8/DE1_SoC.sv Line: 1
+    Info (12023): Found entity 2: clock_divider File: C:/lab8/DE1_SoC.sv Line: 24
 Info (12021): Found 3 design units, including 3 entities, in source file inputuser.sv
-    Info (12023): Found entity 1: inputUser File: C:/Users/Son Tran/Desktop/lab8/inputUser.sv Line: 1
-    Info (12023): Found entity 2: handleClick File: C:/Users/Son Tran/Desktop/lab8/inputUser.sv Line: 12
-    Info (12023): Found entity 3: handleClick_testbench File: C:/Users/Son Tran/Desktop/lab8/inputUser.sv Line: 46
+    Info (12023): Found entity 1: inputUser File: C:/lab8/inputUser.sv Line: 1
+    Info (12023): Found entity 2: handleClick File: C:/lab8/inputUser.sv Line: 12
+    Info (12023): Found entity 3: handleClick_testbench File: C:/lab8/inputUser.sv Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file lights.sv
-    Info (12023): Found entity 1: lights File: C:/Users/Son Tran/Desktop/lab8/lights.sv Line: 1
+    Info (12023): Found entity 1: lights File: C:/lab8/lights.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file frog.sv
-    Info (12023): Found entity 1: frog File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 1
+    Info (12023): Found entity 1: frog File: C:/lab8/frog.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file center.sv
-    Info (12023): Found entity 1: center File: C:/Users/Son Tran/Desktop/lab8/center.sv Line: 1
+    Info (12023): Found entity 1: center File: C:/lab8/center.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bottomlight.sv
-    Info (12023): Found entity 1: bottomLight File: C:/Users/Son Tran/Desktop/lab8/bottomLight.sv Line: 1
+    Info (12023): Found entity 1: bottomLight File: C:/lab8/bottomLight.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file led_matrix_driver.sv
-    Info (12023): Found entity 1: led_matrix_driver File: C:/Users/Son Tran/Desktop/lab8/led_matrix_driver.sv Line: 1
+    Info (12023): Found entity 1: led_matrix_driver File: C:/lab8/led_matrix_driver.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cars.sv
-    Info (12023): Found entity 1: cars File: C:/Users/Son Tran/Desktop/lab8/cars.sv Line: 1
+    Info (12023): Found entity 1: cars File: C:/lab8/cars.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lsfr.sv
-    Info (12023): Found entity 1: LSFR File: C:/Users/Son Tran/Desktop/lab8/LSFR.sv Line: 1
+    Info (12023): Found entity 1: LSFR File: C:/lab8/LSFR.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/Son Tran/Desktop/lab8/adder.sv Line: 1
+    Info (12023): Found entity 1: adder File: C:/lab8/adder.sv Line: 1
 Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
-Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:clkdiv" File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 9
-Info (12128): Elaborating entity "LSFR" for hierarchy "LSFR:randomize" File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 15
-Warning (10230): Verilog HDL assignment warning at LSFR.sv(8): truncated value with size 9 to match size of target (1) File: C:/Users/Son Tran/Desktop/lab8/LSFR.sv Line: 8
-Info (12128): Elaborating entity "adder" for hierarchy "adder:add" File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 16
-Warning (10036): Verilog HDL or VHDL warning at adder.sv(4): object "sum" assigned a value but never read File: C:/Users/Son Tran/Desktop/lab8/adder.sv Line: 4
-Info (12128): Elaborating entity "cars" for hierarchy "cars:getCar" File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 17
-Info (12128): Elaborating entity "inputUser" for hierarchy "inputUser:inputpress" File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 18
-Info (12128): Elaborating entity "handleClick" for hierarchy "inputUser:inputpress|handleClick:Left" File: C:/Users/Son Tran/Desktop/lab8/inputUser.sv Line: 5
-Info (12128): Elaborating entity "frog" for hierarchy "frog:setFrog" File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 19
-Info (12128): Elaborating entity "lights" for hierarchy "frog:setFrog|lights:LED64" File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 10
-Info (12128): Elaborating entity "bottomLight" for hierarchy "frog:setFrog|bottomLight:LED8" File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 73
-Info (12128): Elaborating entity "center" for hierarchy "frog:setFrog|center:LED3" File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 78
-Info (12128): Elaborating entity "led_matrix_driver" for hierarchy "led_matrix_driver:driver" File: C:/Users/Son Tran/Desktop/lab8/DE1_SoC.sv Line: 21
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:clkdiv" File: C:/lab8/DE1_SoC.sv Line: 9
+Info (12128): Elaborating entity "LSFR" for hierarchy "LSFR:randomize" File: C:/lab8/DE1_SoC.sv Line: 15
+Info (12128): Elaborating entity "adder" for hierarchy "adder:add" File: C:/lab8/DE1_SoC.sv Line: 16
+Warning (10036): Verilog HDL or VHDL warning at adder.sv(4): object "sum" assigned a value but never read File: C:/lab8/adder.sv Line: 4
+Info (12128): Elaborating entity "cars" for hierarchy "cars:getCar" File: C:/lab8/DE1_SoC.sv Line: 17
+Info (12128): Elaborating entity "inputUser" for hierarchy "inputUser:inputpress" File: C:/lab8/DE1_SoC.sv Line: 18
+Info (12128): Elaborating entity "handleClick" for hierarchy "inputUser:inputpress|handleClick:Left" File: C:/lab8/inputUser.sv Line: 5
+Info (12128): Elaborating entity "frog" for hierarchy "frog:setFrog" File: C:/lab8/DE1_SoC.sv Line: 19
+Info (12128): Elaborating entity "lights" for hierarchy "frog:setFrog|lights:LED64" File: C:/lab8/frog.sv Line: 11
+Info (12128): Elaborating entity "bottomLight" for hierarchy "frog:setFrog|bottomLight:LED8" File: C:/lab8/frog.sv Line: 74
+Info (12128): Elaborating entity "center" for hierarchy "frog:setFrog|center:LED3" File: C:/lab8/frog.sv Line: 79
+Info (12128): Elaborating entity "led_matrix_driver" for hierarchy "led_matrix_driver:driver" File: C:/lab8/DE1_SoC.sv Line: 21
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "frog:setFrog|resetfield" is missing source, defaulting to GND File: C:/Users/Son Tran/Desktop/lab8/frog.sv Line: 5
+    Warning (12110): Net "frog:setFrog|resetfield" is missing source, defaulting to GND File: C:/lab8/frog.sv Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 16 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Son Tran/Desktop/lab8/output_files/DE1_SoC.map.smsg
+Info (144001): Generated suppressed messages file C:/lab8/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 369 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 530 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 36 output pins
-    Info (21061): Implemented 318 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 737 megabytes
-    Info: Processing ended: Sun Mar 04 14:26:10 2018
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:41
+    Info (21061): Implemented 479 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 723 megabytes
+    Info: Processing ended: Mon Mar 05 18:22:00 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Son Tran/Desktop/lab8/output_files/DE1_SoC.map.smsg.
+The suppressed messages can be found in C:/lab8/output_files/DE1_SoC.map.smsg.
 
 

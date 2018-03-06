@@ -1,5 +1,5 @@
-module lights (clk, Reset, resetfield, L, R,U,D, NL, NR,NU,ND, lightOn);
-input clk, Reset, resetfield;
+module lights (clk, Reset, resetfield, L, R,U,D, NL, NR,NU,ND, red, lightOn);
+input clk, Reset, resetfield, red;
  // L - True when left key (KEY[3]) is pressed
  // R - True when right key (KEY[0]) is pressed
  // NL - True when the light to the left of this one is ON
@@ -22,7 +22,7 @@ input clk, Reset, resetfield;
 		default: ns = 1'bX;
 	endcase
 		always_ff @(posedge clk)
-		if(Reset|resetfield)
+		if(Reset|resetfield|red)
 			lightOn <=Off ; //turn off when reset
 		else
 			lightOn<=ns;

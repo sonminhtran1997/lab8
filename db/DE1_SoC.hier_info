@@ -1,40 +1,40 @@
 |DE1_SoC
-GPIO_0[0] << <GND>
-GPIO_0[1] << <GND>
-GPIO_0[2] << <GND>
-GPIO_0[3] << <GND>
-GPIO_0[4] << <GND>
-GPIO_0[5] << <GND>
-GPIO_0[6] << <GND>
-GPIO_0[7] << <GND>
-GPIO_0[8] << <GND>
-GPIO_0[9] << <GND>
-GPIO_0[10] << <GND>
-GPIO_0[11] << <GND>
-GPIO_0[12] << led_matrix_driver:driver.row_sink[0]
-GPIO_0[13] << led_matrix_driver:driver.row_sink[1]
-GPIO_0[14] << led_matrix_driver:driver.row_sink[2]
-GPIO_0[15] << led_matrix_driver:driver.row_sink[3]
-GPIO_0[16] << led_matrix_driver:driver.row_sink[4]
-GPIO_0[17] << led_matrix_driver:driver.row_sink[5]
-GPIO_0[18] << led_matrix_driver:driver.row_sink[6]
-GPIO_0[19] << led_matrix_driver:driver.row_sink[7]
-GPIO_0[20] << led_matrix_driver:driver.red_driver[0]
-GPIO_0[21] << led_matrix_driver:driver.red_driver[1]
-GPIO_0[22] << led_matrix_driver:driver.red_driver[2]
-GPIO_0[23] << led_matrix_driver:driver.red_driver[3]
-GPIO_0[24] << led_matrix_driver:driver.red_driver[4]
-GPIO_0[25] << led_matrix_driver:driver.red_driver[5]
-GPIO_0[26] << led_matrix_driver:driver.red_driver[6]
-GPIO_0[27] << led_matrix_driver:driver.red_driver[7]
-GPIO_0[28] << led_matrix_driver:driver.green_driver[0]
-GPIO_0[29] << led_matrix_driver:driver.green_driver[1]
-GPIO_0[30] << led_matrix_driver:driver.green_driver[2]
-GPIO_0[31] << led_matrix_driver:driver.green_driver[3]
-GPIO_0[32] << led_matrix_driver:driver.green_driver[4]
-GPIO_0[33] << led_matrix_driver:driver.green_driver[5]
-GPIO_0[34] << led_matrix_driver:driver.green_driver[6]
-GPIO_0[35] << led_matrix_driver:driver.green_driver[7]
+GPIO_0[0] <= <GND>
+GPIO_0[1] <= <GND>
+GPIO_0[2] <= <GND>
+GPIO_0[3] <= <GND>
+GPIO_0[4] <= <GND>
+GPIO_0[5] <= <GND>
+GPIO_0[6] <= <GND>
+GPIO_0[7] <= <GND>
+GPIO_0[8] <= <GND>
+GPIO_0[9] <= <GND>
+GPIO_0[10] <= <GND>
+GPIO_0[11] <= <GND>
+GPIO_0[12] <= led_matrix_driver:driver.row_sink[0]
+GPIO_0[13] <= led_matrix_driver:driver.row_sink[1]
+GPIO_0[14] <= led_matrix_driver:driver.row_sink[2]
+GPIO_0[15] <= led_matrix_driver:driver.row_sink[3]
+GPIO_0[16] <= led_matrix_driver:driver.row_sink[4]
+GPIO_0[17] <= led_matrix_driver:driver.row_sink[5]
+GPIO_0[18] <= led_matrix_driver:driver.row_sink[6]
+GPIO_0[19] <= led_matrix_driver:driver.row_sink[7]
+GPIO_0[20] <= led_matrix_driver:driver.red_driver[0]
+GPIO_0[21] <= led_matrix_driver:driver.red_driver[1]
+GPIO_0[22] <= led_matrix_driver:driver.red_driver[2]
+GPIO_0[23] <= led_matrix_driver:driver.red_driver[3]
+GPIO_0[24] <= led_matrix_driver:driver.red_driver[4]
+GPIO_0[25] <= led_matrix_driver:driver.red_driver[5]
+GPIO_0[26] <= led_matrix_driver:driver.red_driver[6]
+GPIO_0[27] <= led_matrix_driver:driver.red_driver[7]
+GPIO_0[28] <= led_matrix_driver:driver.green_driver[0]
+GPIO_0[29] <= led_matrix_driver:driver.green_driver[1]
+GPIO_0[30] <= led_matrix_driver:driver.green_driver[2]
+GPIO_0[31] <= led_matrix_driver:driver.green_driver[3]
+GPIO_0[32] <= led_matrix_driver:driver.green_driver[4]
+GPIO_0[33] <= led_matrix_driver:driver.green_driver[5]
+GPIO_0[34] <= led_matrix_driver:driver.green_driver[6]
+GPIO_0[35] <= led_matrix_driver:driver.green_driver[7]
 CLOCK_50 => CLOCK_50.IN1
 SW[0] => SW[0].IN1
 SW[1] => SW[1].IN1
@@ -130,14 +130,14 @@ clk => random[6]~reg0.CLK
 clk => random[7]~reg0.CLK
 clk => random[8]~reg0.CLK
 reset => random.OUTPUTSELECT
-reset => random[1]~reg0.ENA
-reset => random[2]~reg0.ENA
-reset => random[3]~reg0.ENA
-reset => random[4]~reg0.ENA
-reset => random[5]~reg0.ENA
-reset => random[6]~reg0.ENA
-reset => random[7]~reg0.ENA
-reset => random[8]~reg0.ENA
+reset => random.OUTPUTSELECT
+reset => random.OUTPUTSELECT
+reset => random.OUTPUTSELECT
+reset => random.OUTPUTSELECT
+reset => random.OUTPUTSELECT
+reset => random.OUTPUTSELECT
+reset => random.OUTPUTSELECT
+reset => random.OUTPUTSELECT
 random[0] <= random[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 random[1] <= random[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 random[2] <= random[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -300,134 +300,70 @@ reset => red_array.OUTPUTSELECT
 reset => red_array.OUTPUTSELECT
 reset => red_array.OUTPUTSELECT
 reset => red_array.OUTPUTSELECT
-shift => ns[7][7].OUTPUTSELECT
-shift => ns[7][6].OUTPUTSELECT
-shift => ns[7][5].OUTPUTSELECT
-shift => ns[7][4].OUTPUTSELECT
-shift => ns[7][3].OUTPUTSELECT
-shift => ns[7][2].OUTPUTSELECT
-shift => ns[7][1].OUTPUTSELECT
-shift => ns[7][0].OUTPUTSELECT
-shift => ns[6][7].OUTPUTSELECT
-shift => ns[6][6].OUTPUTSELECT
-shift => ns[6][5].OUTPUTSELECT
-shift => ns[6][4].OUTPUTSELECT
-shift => ns[6][3].OUTPUTSELECT
-shift => ns[6][2].OUTPUTSELECT
-shift => ns[6][1].OUTPUTSELECT
-shift => ns[6][0].OUTPUTSELECT
-shift => ns[5][7].OUTPUTSELECT
-shift => ns[5][6].OUTPUTSELECT
-shift => ns[5][5].OUTPUTSELECT
-shift => ns[5][4].OUTPUTSELECT
-shift => ns[5][3].OUTPUTSELECT
-shift => ns[5][2].OUTPUTSELECT
-shift => ns[5][1].OUTPUTSELECT
-shift => ns[5][0].OUTPUTSELECT
-shift => ns[4][7].OUTPUTSELECT
-shift => ns[4][6].OUTPUTSELECT
-shift => ns[4][5].OUTPUTSELECT
-shift => ns[4][4].OUTPUTSELECT
-shift => ns[4][3].OUTPUTSELECT
-shift => ns[4][2].OUTPUTSELECT
-shift => ns[4][1].OUTPUTSELECT
-shift => ns[4][0].OUTPUTSELECT
-shift => ns[3][7].OUTPUTSELECT
-shift => ns[3][6].OUTPUTSELECT
-shift => ns[3][5].OUTPUTSELECT
-shift => ns[3][4].OUTPUTSELECT
-shift => ns[3][3].OUTPUTSELECT
-shift => ns[3][2].OUTPUTSELECT
-shift => ns[3][1].OUTPUTSELECT
-shift => ns[3][0].OUTPUTSELECT
-shift => ns[2][7].OUTPUTSELECT
-shift => ns[2][6].OUTPUTSELECT
-shift => ns[2][5].OUTPUTSELECT
-shift => ns[2][4].OUTPUTSELECT
-shift => ns[2][3].OUTPUTSELECT
-shift => ns[2][2].OUTPUTSELECT
-shift => ns[2][1].OUTPUTSELECT
-shift => ns[2][0].OUTPUTSELECT
-shift => ns[1][7].OUTPUTSELECT
-shift => ns[1][6].OUTPUTSELECT
-shift => ns[1][5].OUTPUTSELECT
-shift => ns[1][4].OUTPUTSELECT
-shift => ns[1][3].OUTPUTSELECT
-shift => ns[1][2].OUTPUTSELECT
-shift => ns[1][1].OUTPUTSELECT
-shift => ns[1][0].OUTPUTSELECT
-shift => ns[0][7].OUTPUTSELECT
-shift => ns[0][6].OUTPUTSELECT
-shift => ns[0][5].OUTPUTSELECT
-shift => ns[0][4].OUTPUTSELECT
-shift => ns[0][3].OUTPUTSELECT
-shift => ns[0][2].OUTPUTSELECT
-shift => ns[0][1].OUTPUTSELECT
-shift => ns[0][0].OUTPUTSELECT
-red[0][0] => ~NO_FANOUT~
-red[0][1] => ~NO_FANOUT~
-red[0][2] => ~NO_FANOUT~
-red[0][3] => ~NO_FANOUT~
-red[0][4] => ~NO_FANOUT~
-red[0][5] => ~NO_FANOUT~
-red[0][6] => ~NO_FANOUT~
-red[0][7] => ~NO_FANOUT~
-red[1][0] => ~NO_FANOUT~
-red[1][1] => ~NO_FANOUT~
-red[1][2] => ~NO_FANOUT~
-red[1][3] => ~NO_FANOUT~
-red[1][4] => ~NO_FANOUT~
-red[1][5] => ~NO_FANOUT~
-red[1][6] => ~NO_FANOUT~
-red[1][7] => ~NO_FANOUT~
-red[2][0] => ~NO_FANOUT~
-red[2][1] => ~NO_FANOUT~
-red[2][2] => ~NO_FANOUT~
-red[2][3] => ~NO_FANOUT~
-red[2][4] => ~NO_FANOUT~
-red[2][5] => ~NO_FANOUT~
-red[2][6] => ~NO_FANOUT~
-red[2][7] => ~NO_FANOUT~
-red[3][0] => ~NO_FANOUT~
-red[3][1] => ~NO_FANOUT~
-red[3][2] => ~NO_FANOUT~
-red[3][3] => ~NO_FANOUT~
-red[3][4] => ~NO_FANOUT~
-red[3][5] => ~NO_FANOUT~
-red[3][6] => ~NO_FANOUT~
-red[3][7] => ~NO_FANOUT~
-red[4][0] => ~NO_FANOUT~
-red[4][1] => ~NO_FANOUT~
-red[4][2] => ~NO_FANOUT~
-red[4][3] => ~NO_FANOUT~
-red[4][4] => ~NO_FANOUT~
-red[4][5] => ~NO_FANOUT~
-red[4][6] => ~NO_FANOUT~
-red[4][7] => ~NO_FANOUT~
-red[5][0] => ~NO_FANOUT~
-red[5][1] => ~NO_FANOUT~
-red[5][2] => ~NO_FANOUT~
-red[5][3] => ~NO_FANOUT~
-red[5][4] => ~NO_FANOUT~
-red[5][5] => ~NO_FANOUT~
-red[5][6] => ~NO_FANOUT~
-red[5][7] => ~NO_FANOUT~
-red[6][0] => ~NO_FANOUT~
-red[6][1] => ~NO_FANOUT~
-red[6][2] => ~NO_FANOUT~
-red[6][3] => ~NO_FANOUT~
-red[6][4] => ~NO_FANOUT~
-red[6][5] => ~NO_FANOUT~
-red[6][6] => ~NO_FANOUT~
-red[6][7] => ~NO_FANOUT~
-red[7][0] => ~NO_FANOUT~
-red[7][1] => ~NO_FANOUT~
-red[7][2] => ~NO_FANOUT~
-red[7][3] => ~NO_FANOUT~
-red[7][4] => ~NO_FANOUT~
-red[7][5] => ~NO_FANOUT~
-red[7][6] => ~NO_FANOUT~
-red[7][7] => ~NO_FANOUT~
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
+shift => red_array.OUTPUTSELECT
 red_array[0][0] <= red_array[0][0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 red_array[0][1] <= red_array[0][1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 red_array[0][2] <= red_array[0][2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -558,6 +494,70 @@ L => L.IN64
 R => R.IN64
 U => U.IN64
 D => D.IN64
+red_array[0][0] => ~NO_FANOUT~
+red_array[0][1] => ~NO_FANOUT~
+red_array[0][2] => ~NO_FANOUT~
+red_array[0][3] => ~NO_FANOUT~
+red_array[0][4] => ~NO_FANOUT~
+red_array[0][5] => ~NO_FANOUT~
+red_array[0][6] => ~NO_FANOUT~
+red_array[0][7] => ~NO_FANOUT~
+red_array[1][0] => red_array[1][0].IN1
+red_array[1][1] => red_array[1][1].IN1
+red_array[1][2] => red_array[1][2].IN1
+red_array[1][3] => red_array[1][3].IN1
+red_array[1][4] => red_array[1][4].IN1
+red_array[1][5] => red_array[1][5].IN1
+red_array[1][6] => red_array[1][6].IN1
+red_array[1][7] => red_array[1][7].IN1
+red_array[2][0] => red_array[2][0].IN1
+red_array[2][1] => red_array[2][1].IN1
+red_array[2][2] => red_array[2][2].IN1
+red_array[2][3] => red_array[2][3].IN1
+red_array[2][4] => red_array[2][4].IN1
+red_array[2][5] => red_array[2][5].IN1
+red_array[2][6] => red_array[2][6].IN1
+red_array[2][7] => red_array[2][7].IN1
+red_array[3][0] => red_array[3][0].IN1
+red_array[3][1] => red_array[3][1].IN1
+red_array[3][2] => red_array[3][2].IN1
+red_array[3][3] => red_array[3][3].IN1
+red_array[3][4] => red_array[3][4].IN1
+red_array[3][5] => red_array[3][5].IN1
+red_array[3][6] => red_array[3][6].IN1
+red_array[3][7] => red_array[3][7].IN1
+red_array[4][0] => red_array[4][0].IN1
+red_array[4][1] => red_array[4][1].IN1
+red_array[4][2] => red_array[4][2].IN1
+red_array[4][3] => red_array[4][3].IN1
+red_array[4][4] => red_array[4][4].IN1
+red_array[4][5] => red_array[4][5].IN1
+red_array[4][6] => red_array[4][6].IN1
+red_array[4][7] => red_array[4][7].IN1
+red_array[5][0] => red_array[5][0].IN1
+red_array[5][1] => red_array[5][1].IN1
+red_array[5][2] => red_array[5][2].IN1
+red_array[5][3] => red_array[5][3].IN1
+red_array[5][4] => red_array[5][4].IN1
+red_array[5][5] => red_array[5][5].IN1
+red_array[5][6] => red_array[5][6].IN1
+red_array[5][7] => red_array[5][7].IN1
+red_array[6][0] => red_array[6][0].IN1
+red_array[6][1] => red_array[6][1].IN1
+red_array[6][2] => red_array[6][2].IN1
+red_array[6][3] => red_array[6][3].IN1
+red_array[6][4] => red_array[6][4].IN1
+red_array[6][5] => red_array[6][5].IN1
+red_array[6][6] => red_array[6][6].IN1
+red_array[6][7] => red_array[6][7].IN1
+red_array[7][0] => red_array[7][0].IN1
+red_array[7][1] => red_array[7][1].IN1
+red_array[7][2] => red_array[7][2].IN1
+red_array[7][3] => red_array[7][3].IN1
+red_array[7][4] => red_array[7][4].IN1
+red_array[7][5] => red_array[7][5].IN1
+red_array[7][6] => red_array[7][6].IN1
+red_array[7][7] => red_array[7][7].IN1
 green_array[0][0] <= green_array[0][0].DB_MAX_OUTPUT_PORT_TYPE
 green_array[0][1] <= green_array[0][1].DB_MAX_OUTPUT_PORT_TYPE
 green_array[0][2] <= green_array[0][2].DB_MAX_OUTPUT_PORT_TYPE
@@ -676,6 +676,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -731,6 +732,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -786,6 +788,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -841,6 +844,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -896,6 +900,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -951,6 +956,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1006,6 +1012,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1061,6 +1068,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1116,6 +1124,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1171,6 +1180,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1226,6 +1236,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1281,6 +1292,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1336,6 +1348,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1391,6 +1404,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1446,6 +1460,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1501,6 +1516,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1556,6 +1572,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1611,6 +1628,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1666,6 +1684,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1721,6 +1740,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1776,6 +1796,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1831,6 +1852,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1886,6 +1908,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1941,6 +1964,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1996,6 +2020,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2051,6 +2076,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2106,6 +2132,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2161,6 +2188,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2216,6 +2244,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2271,6 +2300,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2326,6 +2356,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2381,6 +2412,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2436,6 +2468,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2491,6 +2524,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2546,6 +2580,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2601,6 +2636,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2656,6 +2692,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2711,6 +2748,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2766,6 +2804,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2821,6 +2860,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2876,6 +2916,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2931,6 +2972,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -2986,6 +3028,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3041,6 +3084,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3096,6 +3140,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3151,6 +3196,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3206,6 +3252,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3261,6 +3308,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3316,6 +3364,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3371,6 +3420,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3426,6 +3476,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3481,6 +3532,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3536,6 +3588,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3591,6 +3644,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3646,6 +3700,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3701,6 +3756,7 @@ NL => always0.IN1
 NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
+red => always1.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
