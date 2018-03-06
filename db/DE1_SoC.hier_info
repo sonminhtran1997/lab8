@@ -1,40 +1,40 @@
 |DE1_SoC
-GPIO_0[0] <= <GND>
-GPIO_0[1] <= <GND>
-GPIO_0[2] <= <GND>
-GPIO_0[3] <= <GND>
-GPIO_0[4] <= <GND>
-GPIO_0[5] <= <GND>
-GPIO_0[6] <= <GND>
-GPIO_0[7] <= <GND>
-GPIO_0[8] <= <GND>
-GPIO_0[9] <= <GND>
-GPIO_0[10] <= <GND>
-GPIO_0[11] <= <GND>
-GPIO_0[12] <= led_matrix_driver:driver.row_sink[0]
-GPIO_0[13] <= led_matrix_driver:driver.row_sink[1]
-GPIO_0[14] <= led_matrix_driver:driver.row_sink[2]
-GPIO_0[15] <= led_matrix_driver:driver.row_sink[3]
-GPIO_0[16] <= led_matrix_driver:driver.row_sink[4]
-GPIO_0[17] <= led_matrix_driver:driver.row_sink[5]
-GPIO_0[18] <= led_matrix_driver:driver.row_sink[6]
-GPIO_0[19] <= led_matrix_driver:driver.row_sink[7]
-GPIO_0[20] <= led_matrix_driver:driver.red_driver[0]
-GPIO_0[21] <= led_matrix_driver:driver.red_driver[1]
-GPIO_0[22] <= led_matrix_driver:driver.red_driver[2]
-GPIO_0[23] <= led_matrix_driver:driver.red_driver[3]
-GPIO_0[24] <= led_matrix_driver:driver.red_driver[4]
-GPIO_0[25] <= led_matrix_driver:driver.red_driver[5]
-GPIO_0[26] <= led_matrix_driver:driver.red_driver[6]
-GPIO_0[27] <= led_matrix_driver:driver.red_driver[7]
-GPIO_0[28] <= led_matrix_driver:driver.green_driver[0]
-GPIO_0[29] <= led_matrix_driver:driver.green_driver[1]
-GPIO_0[30] <= led_matrix_driver:driver.green_driver[2]
-GPIO_0[31] <= led_matrix_driver:driver.green_driver[3]
-GPIO_0[32] <= led_matrix_driver:driver.green_driver[4]
-GPIO_0[33] <= led_matrix_driver:driver.green_driver[5]
-GPIO_0[34] <= led_matrix_driver:driver.green_driver[6]
-GPIO_0[35] <= led_matrix_driver:driver.green_driver[7]
+GPIO_0[0] << <GND>
+GPIO_0[1] << <GND>
+GPIO_0[2] << <GND>
+GPIO_0[3] << <GND>
+GPIO_0[4] << <GND>
+GPIO_0[5] << <GND>
+GPIO_0[6] << <GND>
+GPIO_0[7] << <GND>
+GPIO_0[8] << <GND>
+GPIO_0[9] << <GND>
+GPIO_0[10] << <GND>
+GPIO_0[11] << <GND>
+GPIO_0[12] << led_matrix_driver:driver.row_sink[0]
+GPIO_0[13] << led_matrix_driver:driver.row_sink[1]
+GPIO_0[14] << led_matrix_driver:driver.row_sink[2]
+GPIO_0[15] << led_matrix_driver:driver.row_sink[3]
+GPIO_0[16] << led_matrix_driver:driver.row_sink[4]
+GPIO_0[17] << led_matrix_driver:driver.row_sink[5]
+GPIO_0[18] << led_matrix_driver:driver.row_sink[6]
+GPIO_0[19] << led_matrix_driver:driver.row_sink[7]
+GPIO_0[20] << led_matrix_driver:driver.red_driver[0]
+GPIO_0[21] << led_matrix_driver:driver.red_driver[1]
+GPIO_0[22] << led_matrix_driver:driver.red_driver[2]
+GPIO_0[23] << led_matrix_driver:driver.red_driver[3]
+GPIO_0[24] << led_matrix_driver:driver.red_driver[4]
+GPIO_0[25] << led_matrix_driver:driver.red_driver[5]
+GPIO_0[26] << led_matrix_driver:driver.red_driver[6]
+GPIO_0[27] << led_matrix_driver:driver.red_driver[7]
+GPIO_0[28] << led_matrix_driver:driver.green_driver[0]
+GPIO_0[29] << led_matrix_driver:driver.green_driver[1]
+GPIO_0[30] << led_matrix_driver:driver.green_driver[2]
+GPIO_0[31] << led_matrix_driver:driver.green_driver[3]
+GPIO_0[32] << led_matrix_driver:driver.green_driver[4]
+GPIO_0[33] << led_matrix_driver:driver.green_driver[5]
+GPIO_0[34] << led_matrix_driver:driver.green_driver[6]
+GPIO_0[35] << led_matrix_driver:driver.green_driver[7]
 CLOCK_50 => CLOCK_50.IN1
 SW[0] => SW[0].IN1
 SW[1] => SW[1].IN1
@@ -50,6 +50,13 @@ KEY[0] => KEY[0].IN1
 KEY[1] => KEY[1].IN1
 KEY[2] => KEY[2].IN1
 KEY[3] => KEY[3].IN1
+HEX0[0] << frog:setFrog.display[0]
+HEX0[1] << frog:setFrog.display[1]
+HEX0[2] << frog:setFrog.display[2]
+HEX0[3] << frog:setFrog.display[3]
+HEX0[4] << frog:setFrog.display[4]
+HEX0[5] << frog:setFrog.display[5]
+HEX0[6] << frog:setFrog.display[6]
 
 
 |DE1_SoC|clock_divider:clkdiv
@@ -622,6 +629,13 @@ green_array[7][4] <= green_array[7][4].DB_MAX_OUTPUT_PORT_TYPE
 green_array[7][5] <= green_array[7][5].DB_MAX_OUTPUT_PORT_TYPE
 green_array[7][6] <= green_array[7][6].DB_MAX_OUTPUT_PORT_TYPE
 green_array[7][7] <= green_array[7][7].DB_MAX_OUTPUT_PORT_TYPE
+display[0] <= victory:comb_3.playerHex[0]
+display[1] <= victory:comb_3.playerHex[1]
+display[2] <= victory:comb_3.playerHex[2]
+display[3] <= victory:comb_3.playerHex[3]
+display[4] <= victory:comb_3.playerHex[4]
+display[5] <= victory:comb_3.playerHex[5]
+display[6] <= victory:comb_3.playerHex[6]
 
 
 |DE1_SoC|frog:setFrog|lights:LED64
@@ -4205,6 +4219,101 @@ NR => always0.IN1
 NU => always0.IN1
 ND => always0.IN1
 lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|frog:setFrog|victory:comb_3
+clk => psUser[0].CLK
+clk => psUser[1].CLK
+clk => psUser[2].CLK
+reset => psUser.OUTPUTSELECT
+reset => psUser.OUTPUTSELECT
+reset => psUser.OUTPUTSELECT
+up => always0.IN1
+array[0][0] => ~NO_FANOUT~
+array[0][1] => ~NO_FANOUT~
+array[0][2] => ~NO_FANOUT~
+array[0][3] => ~NO_FANOUT~
+array[0][4] => ~NO_FANOUT~
+array[0][5] => ~NO_FANOUT~
+array[0][6] => ~NO_FANOUT~
+array[0][7] => ~NO_FANOUT~
+array[1][0] => ~NO_FANOUT~
+array[1][1] => ~NO_FANOUT~
+array[1][2] => ~NO_FANOUT~
+array[1][3] => ~NO_FANOUT~
+array[1][4] => ~NO_FANOUT~
+array[1][5] => ~NO_FANOUT~
+array[1][6] => ~NO_FANOUT~
+array[1][7] => ~NO_FANOUT~
+array[2][0] => ~NO_FANOUT~
+array[2][1] => ~NO_FANOUT~
+array[2][2] => ~NO_FANOUT~
+array[2][3] => ~NO_FANOUT~
+array[2][4] => ~NO_FANOUT~
+array[2][5] => ~NO_FANOUT~
+array[2][6] => ~NO_FANOUT~
+array[2][7] => ~NO_FANOUT~
+array[3][0] => ~NO_FANOUT~
+array[3][1] => ~NO_FANOUT~
+array[3][2] => ~NO_FANOUT~
+array[3][3] => ~NO_FANOUT~
+array[3][4] => ~NO_FANOUT~
+array[3][5] => ~NO_FANOUT~
+array[3][6] => ~NO_FANOUT~
+array[3][7] => ~NO_FANOUT~
+array[4][0] => ~NO_FANOUT~
+array[4][1] => ~NO_FANOUT~
+array[4][2] => ~NO_FANOUT~
+array[4][3] => ~NO_FANOUT~
+array[4][4] => ~NO_FANOUT~
+array[4][5] => ~NO_FANOUT~
+array[4][6] => ~NO_FANOUT~
+array[4][7] => ~NO_FANOUT~
+array[5][0] => ~NO_FANOUT~
+array[5][1] => ~NO_FANOUT~
+array[5][2] => ~NO_FANOUT~
+array[5][3] => ~NO_FANOUT~
+array[5][4] => ~NO_FANOUT~
+array[5][5] => ~NO_FANOUT~
+array[5][6] => ~NO_FANOUT~
+array[5][7] => ~NO_FANOUT~
+array[6][0] => ~NO_FANOUT~
+array[6][1] => ~NO_FANOUT~
+array[6][2] => ~NO_FANOUT~
+array[6][3] => ~NO_FANOUT~
+array[6][4] => ~NO_FANOUT~
+array[6][5] => ~NO_FANOUT~
+array[6][6] => ~NO_FANOUT~
+array[6][7] => ~NO_FANOUT~
+array[7][0] => always0.IN0
+array[7][1] => always0.IN1
+array[7][2] => always0.IN1
+array[7][3] => always0.IN1
+array[7][4] => always0.IN1
+array[7][5] => always0.IN1
+array[7][6] => always0.IN1
+array[7][7] => always0.IN1
+resetfield <= always0.DB_MAX_OUTPUT_PORT_TYPE
+playerHex[0] <= decode:comb_16.port1
+playerHex[1] <= decode:comb_16.port1
+playerHex[2] <= decode:comb_16.port1
+playerHex[3] <= decode:comb_16.port1
+playerHex[4] <= decode:comb_16.port1
+playerHex[5] <= decode:comb_16.port1
+playerHex[6] <= decode:comb_16.port1
+
+
+|DE1_SoC|frog:setFrog|victory:comb_3|decode:comb_16
+ps[0] => Decoder0.IN2
+ps[1] => Decoder0.IN1
+ps[2] => Decoder0.IN0
+hex[0] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DE1_SoC|led_matrix_driver:driver

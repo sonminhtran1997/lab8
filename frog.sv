@@ -1,8 +1,9 @@
-module frog(Clock,Reset,L,R,U,D,red_array, green_array);
+module frog(Clock,Reset,L,R,U,D,red_array, green_array, display);
 	input Clock,Reset;
 	input L,R,U,D;
-	output reg [7:0][7:0] green_array;
 	input reg [7:0][7:0] red_array;
+	output reg [7:0][7:0] green_array;
+	output reg [6:0] display;
 	reg resetfield;
 	initial
 	resetfield =0;
@@ -80,5 +81,6 @@ module frog(Clock,Reset,L,R,U,D,red_array, green_array);
 	bottomLight LED2(Clock, Reset, resetfield, L, R,U,D, green_array[0][2], green_array[0][0],green_array[1][1],green_array[0][1],green_array[0][1]);
 	bottomLight LED1(Clock, Reset, resetfield, L, R,U,D, green_array[0][1], green_array[0][7],green_array[1][0],green_array[0][0],green_array[0][0]);
 	
+	victory(Clock, Reset, U, green_array,resetfield, display);
 	
 endmodule
